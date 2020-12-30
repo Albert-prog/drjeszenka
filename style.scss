@@ -1,0 +1,64 @@
+// @import '_reset.scss';
+$standard-color: #faf7ef;
+$standard-margin:10px;
+
+body {
+  background-color: $standard-color;
+}
+
+// top section
+
+.headerClass {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  max-height: 100px;
+  width: 100vw;
+  margin: $standard-margin*2;
+}
+.logoClass {
+  display: inline;
+}
+.menuContainer {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  box-sizing: border-box;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    a {
+      padding: 5px;
+    } 
+}
+
+.topSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+    .topArticle {
+      margin: $standard-margin*3;
+    }
+}
+
+// mid section
+
+.topMidSection {
+  h1 {
+  text-align: center;
+  }
+  .casesContainer {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .casesBox {
+    margin: $standard-margin;
+    max-width: 40vw;
+    p {
+      text-align: justify;
+    }
+  }
+}

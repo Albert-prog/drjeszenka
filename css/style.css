@@ -1,0 +1,88 @@
+body {
+  background-color: #faf7ef;
+}
+
+.headerClass {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-height: 100px;
+  width: 100vw;
+  margin: 20px;
+}
+
+.logoClass {
+  display: inline;
+}
+
+.menuContainer {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menuContainer a {
+  padding: 5px;
+}
+
+.topSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.topSection .topArticle {
+  margin: 30px;
+}
+
+.topMidSection h1 {
+  text-align: center;
+}
+
+.topMidSection .casesContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.topMidSection .casesBox {
+  margin: 10px;
+  max-width: 40vw;
+}
+
+.topMidSection .casesBox p {
+  text-align: justify;
+}
+/*# sourceMappingURL=style.css.map */
