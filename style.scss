@@ -1,9 +1,17 @@
 // @import '_reset.scss';
 $standard-color: #faf7ef;
 $standard-margin:10px;
+$standard-font:'Ibarra Real Nova', serif;
 
 body {
   background-color: $standard-color;
+  font-family: $standard-font;
+  
+}
+
+.bodyContainer {
+  max-width: 80vw;
+  margin: 0 auto 0 auto;
 }
 
 // top section
@@ -13,7 +21,7 @@ body {
   display: flex;
   flex-direction: row;
   max-height: 100px;
-  width: 100vw;
+  width: auto;
   margin: $standard-margin*2;
 }
 .logoClass {
@@ -22,7 +30,7 @@ body {
 .menuContainer {
   position: absolute;
   top: 0;
-  right: 100px;
+  right: 20px;
   box-sizing: border-box;
   width: auto;
   display: flex;
@@ -47,16 +55,18 @@ body {
 .topMidSection {
   h1 {
   text-align: center;
+  font-size: 40px;
+  font-weight: 700;
   }
   .casesContainer {
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
   }
   .casesBox {
     margin: $standard-margin;
-    max-width: 40vw;
+    max-width: 30vw;
     p {
       text-align: justify;
     }

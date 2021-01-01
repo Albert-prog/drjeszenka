@@ -1,5 +1,11 @@
 body {
   background-color: #faf7ef;
+  font-family: "Ibarra Real Nova", serif;
+}
+
+.bodyContainer {
+  max-width: 80vw;
+  margin: 0 auto 0 auto;
 }
 
 .headerClass {
@@ -12,7 +18,7 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   max-height: 100px;
-  width: 100vw;
+  width: auto;
   margin: 20px;
 }
 
@@ -23,7 +29,7 @@ body {
 .menuContainer {
   position: absolute;
   top: 0;
-  right: 100px;
+  right: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: auto;
@@ -61,15 +67,16 @@ body {
 
 .topMidSection h1 {
   text-align: center;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .topMidSection .casesContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,7 +86,7 @@ body {
 
 .topMidSection .casesBox {
   margin: 10px;
-  max-width: 40vw;
+  max-width: 30vw;
 }
 
 .topMidSection .casesBox p {
