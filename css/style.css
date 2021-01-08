@@ -62,6 +62,7 @@ body {
   padding: 10px;
   color: black;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .menuContainer a:hover {
@@ -149,9 +150,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 20px;
 }
 
-.aboutmeContainer article {
+.aboutmeContainer p {
   margin: 20px;
+  max-width: 50vw;
 }
 /*# sourceMappingURL=style.css.map */
