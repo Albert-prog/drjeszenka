@@ -106,3 +106,16 @@ body {
     }
   }
 }
+
+
+//bemutatkozás
+
+.aboutmeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  article {
+    margin: $standard-margin*2;
+
+  }
+  }
