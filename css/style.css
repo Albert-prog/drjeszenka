@@ -1,11 +1,17 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 body {
   background-color: #faf7ef;
   font-family: "Ibarra Real Nova", serif;
-}
-
-.bodyContainer {
   max-width: 80vw;
-  margin: 0 auto 0 auto;
+  margin: auto;
 }
 
 .headerClass {
@@ -19,17 +25,24 @@ body {
           flex-direction: row;
   max-height: 100px;
   width: auto;
-  margin: 20px;
+  margin-top: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.logoClass {
+.headerClass p, .headerClass a {
+  margin: 0;
+  padding: 10px;
+}
+
+.headerClass .logoClass {
   display: inline;
+  margin-left: 40px;
 }
 
 .menuContainer {
-  position: absolute;
   top: 0;
-  right: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: auto;
@@ -46,7 +59,27 @@ body {
 }
 
 .menuContainer a {
-  padding: 5px;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.menuContainer a:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition-delay: 50ms;
+          transition-delay: 50ms;
+  font-weight: 700;
+}
+
+.menuContainer:hover {
+  opacity: 50%;
+  -webkit-transition: 50ms;
+  transition: 50ms;
+}
+
+.mainClass img {
+  margin: 10px;
 }
 
 .topSection {
@@ -57,12 +90,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 20px;
 }
 
 .topSection .topArticle {
-  margin: 30px;
+  margin: 10px;
+}
+
+.topSection .topArticle h1 {
+  font-size: 40px;
+}
+
+.topSection .topArticle p {
+  font-size: 24px;
 }
 
 .topMidSection h1 {
@@ -72,6 +115,8 @@ body {
 }
 
 .topMidSection .casesContainer {
+  max-width: 80vw;
+  margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -82,11 +127,11 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 10px;
 }
 
 .topMidSection .casesBox {
-  margin: 10px;
-  max-width: 30vw;
+  max-width: 35vw;
 }
 
 .topMidSection .casesBox p {

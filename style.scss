@@ -1,4 +1,6 @@
-// @import '_reset.scss';
+@import 'reset';
+
+
 $standard-color: #faf7ef;
 $standard-margin:10px;
 $standard-font:'Ibarra Real Nova', serif;
@@ -6,13 +8,11 @@ $standard-font:'Ibarra Real Nova', serif;
 body {
   background-color: $standard-color;
   font-family: $standard-font;
-  
-}
-
-.bodyContainer {
   max-width: 80vw;
-  margin: 0 auto 0 auto;
-}
+  margin: auto;
+
+  
+} 
 
 // top section
 
@@ -22,31 +22,63 @@ body {
   flex-direction: row;
   max-height: 100px;
   width: auto;
-  margin: $standard-margin*2;
-}
-.logoClass {
-  display: inline;
+  margin-top: $standard-margin*4;
+  justify-content: space-between;
+  p,a {
+    margin: 0;
+    padding: 10px;
+  }
+  .logoClass {
+    display: inline;
+    margin-left: $standard-margin*4;
+  }
 }
 .menuContainer {
-  position: absolute;
+  // position: absolute;
   top: 0;
-  right: 20px;
+  // right: 20px;
   box-sizing: border-box;
   width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
     a {
-      padding: 5px;
+      padding: 10px;
+      color: black;
+      text-decoration: none;
+      
     } 
+    a:hover {
+      background-color:black;
+      color: white;
+      transition-delay: 50ms;
+      font-weight: 700;
+    }
+}
+  .menuContainer:hover {
+    opacity: 50%;
+    transition: 50ms;
+  }
+
+.mainClass {
+  img {
+    margin: $standard-margin;
+  }
 }
 
 .topSection {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  margin: $standard-margin*2;
     .topArticle {
-      margin: $standard-margin*3;
+      margin: $standard-margin;
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 24px;
+      }
     }
 }
 
@@ -59,14 +91,16 @@ body {
   font-weight: 700;
   }
   .casesContainer {
+  max-width: 80vw;
+  margin: auto;
   align-items: center;
   justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
+  margin: $standard-margin;
   }
   .casesBox {
-    margin: $standard-margin;
-    max-width: 30vw;
+    max-width: 35vw;
     p {
       text-align: justify;
     }
