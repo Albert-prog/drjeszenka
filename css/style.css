@@ -10,12 +10,18 @@ html, body {
 body {
   background-color: #faf7ef;
   font-family: "Ibarra Real Nova", serif;
-  max-width: 80vw;
+  max-width: 100vw;
   margin: auto;
 }
 
+.mainHeader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 110;
+}
+
 .headerClass {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,20 +31,37 @@ body {
           flex-direction: row;
   max-height: 100px;
   width: auto;
-  margin-top: 40px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-right: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #faf7ef;
 }
 
-.headerClass p, .headerClass a {
-  margin: 0;
+.headerClass .logoImg {
+  display: inline-block;
   padding: 10px;
+  max-width: 25px;
+  max-height: 25px;
 }
 
 .headerClass .logoClass {
-  display: inline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-left: 40px;
+}
+
+.headerClass .logoClass p {
+  margin: auto;
+}
+
+.headerTwo {
+  background-color: black;
+  color: #faf7ef;
 }
 
 .menuContainer {
@@ -53,20 +76,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .menuContainer a {
-  padding: 10px;
-  color: black;
+  padding: 20px 50px 20px 50px;
+  color: white;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 900;
+  font-size: 24px;
 }
 
 .menuContainer a:hover {
-  background-color: black;
+  background-color: grey;
   color: white;
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
@@ -80,10 +103,15 @@ body {
 }
 
 .mainClass img {
+  float: left;
+  max-width: 100%;
+  height: auto;
   margin: 10px;
 }
 
 .topSection {
+  position: relative;
+  top: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,18 +123,28 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin: 20px;
+  max-height: 100vh;
 }
 
 .topSection .topArticle {
+  max-width: 40%;
   margin: 10px;
 }
 
 .topSection .topArticle h1 {
+  margin: 20px 0;
   font-size: 40px;
 }
 
 .topSection .topArticle p {
-  font-size: 24px;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.topMidSection {
+  position: relative;
+  top: 120px;
 }
 
 .topMidSection h1 {
@@ -117,7 +155,8 @@ body {
 
 .topMidSection .casesContainer {
   max-width: 80vw;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -128,7 +167,6 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 10px;
 }
 
 .topMidSection .casesBox {
