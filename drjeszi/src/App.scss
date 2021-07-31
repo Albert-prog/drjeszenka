@@ -1,5 +1,49 @@
+@import "src/variables";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: $bgcolor;
+}
+//topnav
+.topnavsection {
+  margin-top: $basemargin * 2;
+  display: flex;
+  justify-content: space-between;
+  background-color: $bgcolor;
+  color: $textcolor;
+  .topnavdiv {
+    padding: $basemargin;
+    display: flex;
+  }
+}
+
+.verticalspacer {
+  width: 2px;
+  background-color: $gold;
+  margin: 0 $basemargin;
+}
+
+//Navbar
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  margin: $basemargin * 4;
+  color: $textcolor;
+  a {
+    padding: $basemargin;
+    color: $textcolor;
+    text-decoration: none;
+  }
+  a:hover {
+    background-color: gold;
+    color: $bgcolor;
+  }
 }
