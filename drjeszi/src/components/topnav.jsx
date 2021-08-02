@@ -1,15 +1,31 @@
 import React from 'react'
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import { makeStyles } from '@material-ui/core/styles';
+import Link from '@material-ui/core/Link';
+
+const useStyles = makeStyles({
+  face: {
+    cursor: 'pointer',
+    color: 'primary'
+    },
+});
 
 export default function Topnav() {
+const classes = useStyles();
+
   return (
-    <div class="topnavsection">
-      <div class="topnavdiv">
+    <div className="topnavsection">
+      <div className="topnavdiv">
         <h3>1133 Budapest, Váci út 78/A 1.emelet 3.ajtó</h3>
-        <div class="verticalspacer"></div>
+        <div className="verticalspacer"></div>
         <h3>ugyved.jeszenka@gmail.com</h3>
       </div>
-      <div class="topnavdiv">
-        <h3>icons</h3>
+      <div className="topnavicons">
+        <a href="https://www.facebook.com" target='_blank' rel="noreferrer"><FacebookIcon></FacebookIcon></a>
+        <a href="https://www.linkedin.com" target='_blank' rel="noreferrer"><LinkedInIcon/></a>
+        <a href="https://www.instagram.com" target='_blank' rel="noreferrer"><InstagramIcon/></a>
       </div>
     </div>
   )

@@ -7,13 +7,11 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 body {
-  max-width: 80%;
-  margin: 0 auto;
-  background-color: $bgcolor;
+  background-color: black;
 }
 //topnav
 .topnavsection {
-  margin-top: $basemargin * 2;
+  padding: $basemargin $basemargin * 8 0;
   display: flex;
   justify-content: space-between;
   background-color: $bgcolor;
@@ -21,6 +19,14 @@ body {
   .topnavdiv {
     padding: $basemargin;
     display: flex;
+  }
+  .topnavicons {
+    padding: $basemargin;
+    a {
+      padding: 0 2px;
+      color: $textcolor;
+      text-decoration: none;
+    }
   }
 }
 
@@ -33,10 +39,12 @@ body {
 //Navbar
 
 .navbar {
+  position: relative;
   display: flex;
   justify-content: flex-end;
-  margin: $basemargin * 4;
+  margin: $basemargin * 2 $basemargin * 8;
   color: $textcolor;
+  z-index: 2;
   a {
     padding: $basemargin;
     color: $textcolor;
@@ -46,4 +54,63 @@ body {
     background-color: gold;
     color: $bgcolor;
   }
+}
+
+//Hero
+
+img {
+  position: relative;
+  top: -80px;
+  max-width: 70%;
+  float: right;
+  opacity: 50%;
+}
+
+.herotitle {
+  z-index: 1;
+  color: $textcolor;
+  position: relative;
+  width: 50%;
+  top: 10em;
+  left: 15vw;
+  margin-right: auto;
+  h3 {
+    margin-top: $basemargin * 2;
+    font-size: 3vw;
+    margin-bottom: $basemargin * 5;
+  }
+  p:before {
+    content: "";
+    display: block;
+    width: 6vw;
+    height: 2px;
+    background: $gold;
+    left: -120px;
+    top: 3%;
+    position: absolute;
+  }
+}
+
+.btn {
+  background-color: $gold;
+  padding: 1.5vw 3.5vw;
+  border: none;
+  font-size: 1vw;
+  text-decoration: none;
+  cursor: pointer;
+  color: $bgcolor;
+  z-index: 2;
+}
+.btn:hover {
+  background-color: goldenrod;
+}
+
+//Intro
+
+.introSection {
+  position: relative;
+  top: 10px;
+  z-index: 4;
+  background-color: white;
+  color: $bgcolor;
 }
