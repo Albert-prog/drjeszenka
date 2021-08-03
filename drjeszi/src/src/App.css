@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
 }
 
 body {
@@ -46,7 +46,6 @@ body {
 }
 
 .navbar {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,7 +54,6 @@ body {
           justify-content: flex-end;
   margin: 20px 80px;
   color: #d9dada;
-  z-index: 2;
 }
 
 .navbar a {
@@ -69,16 +67,24 @@ body {
   color: #181026;
 }
 
-img {
-  position: relative;
-  top: -80px;
-  max-width: 70%;
+.heroDiv {
+  display: block;
+  width: 95vw;
+  height: auto;
+  overflow: auto;
+}
+
+.heroDiv img {
+  display: block;
+  top: -70px;
+  width: 70%;
+  height: auto;
   float: right;
   opacity: 50%;
+  z-index: -1;
 }
 
 .herotitle {
-  z-index: 1;
   color: #d9dada;
   position: relative;
   width: 50%;
@@ -89,7 +95,7 @@ img {
 
 .herotitle h3 {
   margin-top: 20px;
-  font-size: 3vw;
+  font-size: 2.5vw;
   margin-bottom: 50px;
 }
 
@@ -120,10 +126,18 @@ img {
 }
 
 .introSection {
-  position: relative;
-  top: 10px;
-  z-index: 4;
+  margin: 0 auto;
+  text-align: center;
   background-color: white;
   color: #181026;
+}
+
+.introSection p {
+  max-width: 70%;
+  margin: 0px auto;
+  padding: 20px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.3vw;
 }
 /*# sourceMappingURL=App.css.map */

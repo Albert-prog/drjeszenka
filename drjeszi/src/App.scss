@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
 }
 body {
   background-color: black;
@@ -39,12 +39,10 @@ body {
 //Navbar
 
 .navbar {
-  position: relative;
   display: flex;
   justify-content: flex-end;
   margin: $basemargin * 2 $basemargin * 8;
   color: $textcolor;
-  z-index: 2;
   a {
     padding: $basemargin;
     color: $textcolor;
@@ -58,16 +56,23 @@ body {
 
 //Hero
 
-img {
-  position: relative;
-  top: -80px;
-  max-width: 70%;
-  float: right;
-  opacity: 50%;
+.heroDiv {
+  display: block;
+  width: 95vw;
+  height: auto;
+  overflow: auto;
+  img {
+    display: block;
+    top: -70px;
+    width: 70%;
+    height: auto;
+    float: right;
+    opacity: 50%;
+    z-index: -1;
+  }
 }
 
 .herotitle {
-  z-index: 1;
   color: $textcolor;
   position: relative;
   width: 50%;
@@ -76,7 +81,7 @@ img {
   margin-right: auto;
   h3 {
     margin-top: $basemargin * 2;
-    font-size: 3vw;
+    font-size: 2.5vw;
     margin-bottom: $basemargin * 5;
   }
   p:before {
@@ -108,9 +113,16 @@ img {
 //Intro
 
 .introSection {
-  position: relative;
-  top: 10px;
-  z-index: 4;
+  margin: 0 auto;
+  text-align: center;
   background-color: white;
   color: $bgcolor;
+  p {
+    max-width: 70%;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.3vw;
+  }
 }

@@ -2,18 +2,12 @@ import React from 'react'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import { makeStyles } from '@material-ui/core/styles';
-import Link from '@material-ui/core/Link';
 
-const useStyles = makeStyles({
-  face: {
-    cursor: 'pointer',
-    color: 'primary'
-    },
-});
+
+
 
 export default function Topnav() {
-const classes = useStyles();
+
 
   return (
     <div className="topnavsection">
