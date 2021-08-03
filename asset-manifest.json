@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/drjeszenka/static/css/main.753c698a.chunk.css",
+    "main.js": "/drjeszenka/static/js/main.b64396ad.chunk.js",
+    "main.js.map": "/drjeszenka/static/js/main.b64396ad.chunk.js.map",
+    "runtime-main.js": "/drjeszenka/static/js/runtime-main.ba35c074.js",
+    "runtime-main.js.map": "/drjeszenka/static/js/runtime-main.ba35c074.js.map",
+    "static/js/2.ce0a6063.chunk.js": "/drjeszenka/static/js/2.ce0a6063.chunk.js",
+    "static/js/2.ce0a6063.chunk.js.map": "/drjeszenka/static/js/2.ce0a6063.chunk.js.map",
+    "static/js/3.0d066c1c.chunk.js": "/drjeszenka/static/js/3.0d066c1c.chunk.js",
+    "static/js/3.0d066c1c.chunk.js.map": "/drjeszenka/static/js/3.0d066c1c.chunk.js.map",
+    "index.html": "/drjeszenka/index.html",
+    "static/css/main.753c698a.chunk.css.map": "/drjeszenka/static/css/main.753c698a.chunk.css.map",
+    "static/js/2.ce0a6063.chunk.js.LICENSE.txt": "/drjeszenka/static/js/2.ce0a6063.chunk.js.LICENSE.txt",
+    "static/media/Urak676_retus-1.b4107057.jpg": "/drjeszenka/static/media/Urak676_retus-1.b4107057.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ba35c074.js",
+    "static/js/2.ce0a6063.chunk.js",
+    "static/css/main.753c698a.chunk.css",
+    "static/js/main.b64396ad.chunk.js"
+  ]
+}
