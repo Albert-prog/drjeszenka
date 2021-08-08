@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="herotitle">
         <p>Forduljon hozzám bizalommal</p>
         <h3>DR. JESZENKA ÁDÁM <br /> ÜGYVÉD, GAZDASÁGI <br /> JOGI SZAKJOGÁSZ</h3>
-        <Button text='KAPCSOLAT'/>
+        <Button text='INGYENES KONZULTÁCIÓ'/>
       </div>
     </div>
   )

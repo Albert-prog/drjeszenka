@@ -15,6 +15,8 @@ export default function Topnav() {
         <h3>1133 Budapest, Váci út 78/A 1.emelet 3.ajtó</h3>
         <div className="verticalspacer"></div>
         <h3>ugyved.jeszenka@gmail.com</h3>
+        <div className="verticalspacer"></div>
+        <h3>06 70 395 8422</h3>
       </div>
       <div className="topnavicons">
         <a href="https://www.facebook.com" target='_blank' rel="noreferrer"><FacebookIcon></FacebookIcon></a>
