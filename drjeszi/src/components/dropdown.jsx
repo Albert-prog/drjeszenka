@@ -8,18 +8,25 @@ const useStyles = makeStyles({
     top: '5px',
     color: '#e9c57d',
   },
+
 });
 
 
 export default function Dropdown(props) {
 
   const [show, setShow] = useState(false)
+  const [isActive, setActive] = useState(false);
 
 
   const classes = useStyles();
+  const handleToggle = () => {
+    setShow(!show);
+    setActive(!isActive);
+  };
+
   return (
-    <div className="arrowDiv" onClick={()=>setShow(!show)}>
-      <ArrowRightAltIcon className={classes.root}/>
+    <div className="arrowDiv" onClick={handleToggle}>
+      <ArrowRightAltIcon className={` ${classes.root} ${isActive ? "arrowOn" : "arrowOff"}`}/>
       <h4>{props.data.name}</h4>
       {
         show ? <p>{props.data.desc}</p> : null

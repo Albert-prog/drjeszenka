@@ -70,28 +70,41 @@ body {
 
 .heroDiv {
   display: block;
+  position: relative;
+  top: -130px;
   width: 95vw;
   height: auto;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .heroDiv img {
   display: block;
-  top: -70px;
+  position: relative;
+  overflow: hidden;
   width: 70%;
   height: auto;
   float: right;
-  opacity: 50%;
-  z-index: -1;
+  opacity: 40%;
+  z-index: -19;
+}
+
+.logoImg {
+  display: inline;
+  position: relative;
+  max-width: 20vw;
+  top: -3vw;
+  left: 15vw;
+  z-index: 3;
 }
 
 .herotitle {
   color: #d9dada;
   position: relative;
   width: 50%;
-  top: 10em;
+  top: 15em;
   left: 15vw;
   margin-right: auto;
+  z-index: 5;
 }
 
 .herotitle h3 {
@@ -106,7 +119,7 @@ body {
   width: 6vw;
   height: 2px;
   background: #e9c576;
-  left: -120px;
+  left: -130px;
   top: 3%;
   position: absolute;
 }
@@ -143,6 +156,8 @@ body {
 }
 
 .profession {
+  position: relative;
+  top: -130px;
   overflow-x: hidden;
 }
 
@@ -161,7 +176,7 @@ body {
   width: 6vw;
   height: 2px;
   background: #e9c576;
-  left: -120px;
+  left: -130px;
   top: 50%;
   position: absolute;
 }
@@ -178,7 +193,6 @@ body {
   position: relative;
   width: 20%;
   border-top: #d9dada 2px solid;
-  border-bottom: #d9dada 2px solid;
   padding: 5px;
   margin: 20px;
   cursor: pointer;
@@ -191,5 +205,85 @@ body {
 
 .arrowDiv p {
   margin: 20px;
+}
+
+.arrowDiv .arrowOn {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.arrowDiv .arrowOff {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.prices {
+  background-color: white;
+}
+
+.prices h3 {
+  color: #181026;
+}
+
+.prices h3:before {
+  content: "";
+  display: block;
+  width: 6vw;
+  height: 2px;
+  background: #181026;
+  left: -130px;
+  top: 50%;
+  position: absolute;
+}
+
+.pricesText {
+  max-width: 70%;
+  margin: 0 auto 30px;
+  color: #181026;
+  font-size: 1.2vw;
+}
+
+.pricesText p {
+  margin: 50px 0;
+}
+
+.email {
+  display: block;
+  background-color: #e9c576;
+  padding: 1vw 2.6vw;
+  max-width: 12vw;
+  margin: 25px auto;
+  border: none;
+  font-size: 1.2vw;
+  text-decoration: none;
+  cursor: pointer;
+  color: #181026;
+  z-index: 2;
+}
+
+.email:hover {
+  background-color: goldenrod;
+}
+
+.contactText {
+  max-width: 70%;
+  margin: 0 auto 15px;
+  color: #d9dada;
+}
+
+.logoImg2 {
+  display: inline;
+  position: relative;
+  max-width: 20vw;
+  left: 15vw;
+  z-index: 3;
 }
 /*# sourceMappingURL=App.css.map */

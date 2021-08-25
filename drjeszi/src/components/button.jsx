@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Button(props) {
   return (
-      <a href="/" className="btn">{props.text}</a>  
+      <a href={props.url} className={props.class}>{props.text}</a>  
   )
 }

@@ -4,7 +4,7 @@ import professions from '../lists/professions';
 
 export const Professions = () => {
   return (
-    <div className="profession">
+    <div className="profession" id='profession'>
       <h3>SZAKTERÜLETEK</h3>
       <div className="dropdownDiv">
         {

@@ -1,17 +1,22 @@
 import React from 'react'
-
+import logo from '../img/logo.png';
 
 export default function Navbar() {
   return (
+    <>
     <div className="navbar">
-      <a href="/"><h3>Szolgáltatások</h3></a>
+      <a href="#about"><h3>Rólam</h3></a>
       <div className="verticalspacer"></div>
-      <a href="/"><h3>Rólam</h3></a>
+      <a href="#profession"><h3>Szakterületek</h3></a>
       <div className="verticalspacer"></div>
-      <a href="/"><h3>Folyamatok</h3></a>
+      <a href="#prices"><h3>Díjazás</h3></a>
       <div className="verticalspacer"></div>
-      <a href="/"><h3>Kapcsolat</h3></a>
+      <a href="#contact"><h3>Kapcsolat</h3></a>
     </div>
+    <a href="/">
+      <img src={logo} alt="jeszenkalogo" className="logoImg"/>
+    </a>
+    </>
   )
 }
 
