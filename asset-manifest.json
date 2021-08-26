@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/drjeszenka/static/css/main.7fc479af.chunk.css",
-    "main.js": "/drjeszenka/static/js/main.efffa7bd.chunk.js",
-    "main.js.map": "/drjeszenka/static/js/main.efffa7bd.chunk.js.map",
+    "main.js": "/drjeszenka/static/js/main.af739a72.chunk.js",
+    "main.js.map": "/drjeszenka/static/js/main.af739a72.chunk.js.map",
     "runtime-main.js": "/drjeszenka/static/js/runtime-main.251179b6.js",
     "runtime-main.js.map": "/drjeszenka/static/js/runtime-main.251179b6.js.map",
     "static/js/2.32290749.chunk.js": "/drjeszenka/static/js/2.32290749.chunk.js",
@@ -12,13 +12,13 @@
     "index.html": "/drjeszenka/index.html",
     "static/css/main.7fc479af.chunk.css.map": "/drjeszenka/static/css/main.7fc479af.chunk.css.map",
     "static/js/2.32290749.chunk.js.LICENSE.txt": "/drjeszenka/static/js/2.32290749.chunk.js.LICENSE.txt",
-    "static/media/Urak676_retus-1.b4107057.jpg": "/drjeszenka/static/media/Urak676_retus-1.b4107057.jpg",
+    "static/media/Urak676.411a731e.webp": "/drjeszenka/static/media/Urak676.411a731e.webp",
     "static/media/logo.0ef6cd50.png": "/drjeszenka/static/media/logo.0ef6cd50.png"
   },
   "entrypoints": [
     "static/js/runtime-main.251179b6.js",
     "static/js/2.32290749.chunk.js",
     "static/css/main.7fc479af.chunk.css",
-    "static/js/main.efffa7bd.chunk.js"
+    "static/js/main.af739a72.chunk.js"
   ]
 }
