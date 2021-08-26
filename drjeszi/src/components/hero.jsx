@@ -1,5 +1,5 @@
 import React from 'react'
-import profil from '../img/Urak676_retus-1.jpg';
+import profil from '../img/Urak676.webp';
 import Button from './button';
 
 
