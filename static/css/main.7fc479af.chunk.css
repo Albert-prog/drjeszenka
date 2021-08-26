@@ -1,2 +1,271 @@
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}code{font-family:source-code-pro,Menlo,Monaco,Consolas,"Courier New",monospace}*{margin:0;padding:0;box-sizing:border-box;font-family:"Garamond"}body{background-color:#000;color:#d9dada}.topnavsection{padding:10px 80px 0;display:flex;justify-content:space-between;background-color:#181026;color:#d9dada}.topnavsection .topnavdiv{padding:10px;display:flex}.topnavsection .topnavicons{padding:10px}.topnavsection .topnavicons a{padding:0 2px;color:#d9dada;text-decoration:none}.verticalspacer{width:2px;background-color:#e9c576;margin:0 10px}.navbar{display:flex;justify-content:flex-end;margin:20px 80px;color:#d9dada}.navbar a{padding:10px;color:#d9dada;text-decoration:none}.navbar a:hover{background-color:gold;color:#181026}.heroDiv{top:-130px;width:95vw}.heroDiv,.heroDiv img{display:block;position:relative;height:auto;overflow:hidden}.heroDiv img{right:-90px;width:70%;float:right;opacity:1%;z-index:-19}.logoImg{display:inline;max-width:20vw;top:-3vw;z-index:3}.herotitle,.logoImg{position:relative;left:15vw}.herotitle{color:#d9dada;width:50%;top:15em;margin-right:auto;z-index:5}.herotitle h3{margin-top:20px;font-size:2.5vw;margin-bottom:50px}.herotitle p:before{content:"";display:block;width:6vw;height:2px;background:#e9c576;left:-130px;top:3%;position:absolute}.btn{background-color:#e9c576;padding:1.5vw 3.5vw;border:none;font-size:1vw;text-decoration:none;cursor:pointer;color:#181026;z-index:2}.btn:hover{background-color:#daa520}.introSection{background-color:#fff;color:#181026}.introSection,.introSection p{margin:0 auto;text-align:center}.introSection p{max-width:70%;padding:20px;font-weight:200;font-size:1.3vw}.profession{position:relative;top:-130px;overflow-x:hidden}.profession h3{color:#d9dada;position:relative;left:15vw;margin-top:20px;font-size:2.5vw;margin-bottom:50px}.profession h3:before{content:"";display:block;width:6vw;height:2px;background:#e9c576;left:-130px;top:50%;position:absolute}.dropdownDiv{display:flex;max-width:80%;margin:0 auto}.arrowDiv{position:relative;width:20%;border-top:2px solid #d9dada;padding:5px;margin:20px;cursor:pointer}.arrowDiv h4{display:inline;margin:10px}.arrowDiv p{margin:20px}.arrowDiv .arrowOn{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.arrowDiv .arrowOff,.arrowDiv .arrowOn{transition:-webkit-transform .5s;transition:transform .5s;transition:transform .5s,-webkit-transform .5s}.arrowDiv .arrowOff{-webkit-transform:rotate(0deg);transform:rotate(0deg)}.prices{background-color:#fff}.prices h3{color:#181026}.prices h3:before{content:"";display:block;width:6vw;height:2px;background:#181026;left:-130px;top:50%;position:absolute}.pricesText{max-width:70%;margin:0 auto 30px;color:#181026;font-size:1.2vw}.pricesText p{margin:50px 0}.email{display:block;background-color:#e9c576;padding:1vw 2.6vw;max-width:12vw;margin:25px auto;border:none;font-size:1.2vw;text-decoration:none;cursor:pointer;color:#181026;z-index:2}.email:hover{background-color:#daa520}.contactText{max-width:70%;margin:0 auto 15px;color:#d9dada}.logoImg2{max-width:20vw;left:15vw;z-index:3}.footerDiv{display:flex;justify-content:space-evenly;margin-bottom:100px}.footerDiv h3{font-size:1.5vw}.footerList{margin-top:10px}.footerList li{margin:5px;color:#d9dada;list-style-type:none}.footerList a{text-decoration:none}.footerList li:hover{color:#e9c576}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Garamond";
+}
+body {
+  background-color: #000;
+  color: #d9dada;
+}
+.topnavsection {
+  padding: 10px 80px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #181026;
+  color: #d9dada;
+}
+.topnavsection .topnavdiv {
+  padding: 10px;
+  display: flex;
+}
+.topnavsection .topnavicons {
+  padding: 10px;
+}
+.topnavsection .topnavicons a {
+  padding: 0 2px;
+  color: #d9dada;
+  text-decoration: none;
+}
+.verticalspacer {
+  width: 2px;
+  background-color: #e9c576;
+  margin: 0 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 80px;
+  color: #d9dada;
+}
+.navbar a {
+  padding: 10px;
+  color: #d9dada;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: gold;
+  color: #181026;
+}
+.heroDiv {
+  top: -130px;
+  width: 95vw;
+}
+.heroDiv,
+.heroDiv img {
+  display: block;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+.heroDiv img {
+  right: -90px;
+  width: 70%;
+  float: right;
+  opacity: 50%;
+  z-index: -19;
+}
+.logoImg {
+  display: inline;
+  max-width: 20vw;
+  top: -3vw;
+  z-index: 3;
+}
+.herotitle,
+.logoImg {
+  position: relative;
+  left: 15vw;
+}
+.herotitle {
+  color: #d9dada;
+  width: 50%;
+  top: 15em;
+  margin-right: auto;
+  z-index: 5;
+}
+.herotitle h3 {
+  margin-top: 20px;
+  font-size: 2.5vw;
+  margin-bottom: 50px;
+}
+.herotitle p:before {
+  content: "";
+  display: block;
+  width: 6vw;
+  height: 2px;
+  background: #e9c576;
+  left: -130px;
+  top: 3%;
+  position: absolute;
+}
+.btn {
+  background-color: #e9c576;
+  padding: 1.5vw 3.5vw;
+  border: none;
+  font-size: 1vw;
+  text-decoration: none;
+  cursor: pointer;
+  color: #181026;
+  z-index: 2;
+}
+.btn:hover {
+  background-color: #daa520;
+}
+.introSection {
+  background-color: #fff;
+  color: #181026;
+}
+.introSection,
+.introSection p {
+  margin: 0 auto;
+  text-align: center;
+}
+.introSection p {
+  max-width: 70%;
+  padding: 20px;
+  font-weight: 200;
+  font-size: 1.3vw;
+}
+.profession {
+  position: relative;
+  top: -130px;
+  overflow-x: hidden;
+}
+.profession h3 {
+  color: #d9dada;
+  position: relative;
+  left: 15vw;
+  margin-top: 20px;
+  font-size: 2.5vw;
+  margin-bottom: 50px;
+}
+.profession h3:before {
+  content: "";
+  display: block;
+  width: 6vw;
+  height: 2px;
+  background: #e9c576;
+  left: -130px;
+  top: 50%;
+  position: absolute;
+}
+.dropdownDiv {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.arrowDiv {
+  position: relative;
+  width: 20%;
+  border-top: 2px solid #d9dada;
+  padding: 5px;
+  margin: 20px;
+  cursor: pointer;
+}
+.arrowDiv h4 {
+  display: inline;
+  margin: 10px;
+}
+.arrowDiv p {
+  margin: 20px;
+}
+.arrowDiv .arrowOn {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.arrowDiv .arrowOff,
+.arrowDiv .arrowOn {
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.arrowDiv .arrowOff {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.prices {
+  background-color: #fff;
+}
+.prices h3 {
+  color: #181026;
+}
+.prices h3:before {
+  content: "";
+  display: block;
+  width: 6vw;
+  height: 2px;
+  background: #181026;
+  left: -130px;
+  top: 50%;
+  position: absolute;
+}
+.pricesText {
+  max-width: 70%;
+  margin: 0 auto 30px;
+  color: #181026;
+  font-size: 1.2vw;
+}
+.pricesText p {
+  margin: 50px 0;
+}
+.email {
+  display: block;
+  background-color: #e9c576;
+  padding: 1vw 2.6vw;
+  max-width: 12vw;
+  margin: 25px auto;
+  border: none;
+  font-size: 1.2vw;
+  text-decoration: none;
+  cursor: pointer;
+  color: #181026;
+  z-index: 2;
+}
+.email:hover {
+  background-color: #daa520;
+}
+.contactText {
+  max-width: 70%;
+  margin: 0 auto 15px;
+  color: #d9dada;
+}
+.logoImg2 {
+  max-width: 20vw;
+  left: 15vw;
+  z-index: 3;
+}
+.footerDiv {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+.footerDiv h3 {
+  font-size: 1.5vw;
+}
+.footerList {
+  margin-top: 10px;
+}
+.footerList li {
+  margin: 5px;
+  color: #d9dada;
+  list-style-type: none;
+}
+.footerList a {
+  text-decoration: none;
+}
+.footerList li:hover {
+  color: #e9c576;
+}
 /*# sourceMappingURL=main.7fc479af.chunk.css.map */
