@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+  font-family: "Garamond";
 }
 body {
   background-color: black;
@@ -68,10 +68,11 @@ body {
     display: block;
     position: relative;
     overflow: hidden;
+    right: -90px;
     width: 70%;
     height: auto;
     float: right;
-    opacity: 40%;
+    opacity: 50%;
     z-index: -19;
   }
 }
@@ -251,10 +252,35 @@ body {
 }
 
 //Footer
+
 .logoImg2 {
-  display: inline;
-  position: relative;
   max-width: 20vw;
   left: 15vw;
   z-index: 3;
+}
+
+.footerDiv {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+  h3 {
+    font-size: 1.5vw;
+  }
+}
+
+.footerList {
+  margin-top: 10px;
+  li {
+    margin: 5px;
+    color: $textcolor;
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  li:hover {
+    color: $gold;
+  }
 }
