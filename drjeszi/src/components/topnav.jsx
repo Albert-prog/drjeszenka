@@ -16,7 +16,7 @@ export default function Topnav() {
         <div className="verticalspacer"></div>
         <h3>ugyved.jeszenka@gmail.com</h3>
         <div className="verticalspacer"></div>
-        <h3>06 70 395 8422</h3>
+        <h3>+36 70 395 8422</h3>
       </div>
       <div className="topnavicons">
         <a href="https://www.facebook.com" target='_blank' rel="noreferrer"><FacebookIcon></FacebookIcon></a>

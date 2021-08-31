@@ -29,7 +29,9 @@ export default function Dropdown(props) {
       <ArrowRightAltIcon className={` ${classes.root} ${isActive ? "arrowOn" : "arrowOff"}`}/>
       <h4>{props.data.name}</h4>
       {
-        show ? <p>{props.data.desc}</p> : null
+        show ? <ul className="professionList">{
+          props.data.desc.map((details, i)=><li>{details}</li>)
+          }</ul> : null
       }
     </div>
   )

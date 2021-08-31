@@ -169,15 +169,21 @@ body {
 
 .dropdownDiv {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   max-width: 80%;
   margin: 0 auto;
+  h4 {
+    font-size: 1.5vw;
+  }
 }
 .arrowDiv {
   position: relative;
+  flex: 1 0 25%;
   width: 20%;
   border-top: $textcolor 2px solid;
   padding: 5px;
-  margin: 20px;
+  margin: 30px 10px;
   cursor: pointer;
   h4 {
     display: inline;
@@ -195,6 +201,14 @@ body {
   .arrowOff {
     transform: rotate(0deg);
     transition: transform 0.5s;
+  }
+}
+
+.professionList {
+  margin-top: 15px;
+  padding-left: 15px;
+  li {
+    padding: 5px;
   }
 }
 
