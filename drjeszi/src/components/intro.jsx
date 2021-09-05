@@ -3,7 +3,7 @@ import React from 'react'
 export const Intro = () => {
   return (
     <div className='profession prices' id="about">
-      <h3>Bemutatkozás</h3>
+      <h3>BEMUTATKOZÁS</h3>
       <div className="pricesText">
         <p>Dr. Jeszenka Ádám egyéni ügyvéd vagyok, a Szegedi Tudományegyetem Állam- és Jogtudományi karán, jogász szakon szereztem a diplomát. Ügyvédi prakszisom Budapesten, a XIII. kerületben található a Dózsa György metrómegálló közvetlen szomszédságában.</p>
          

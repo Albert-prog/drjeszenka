@@ -10,6 +10,10 @@ body {
   background-color: black;
   color: $textcolor;
 }
+
+a {
+  text-decoration: none;
+}
 //topnav
 .topnavsection {
   padding: $basemargin $basemargin * 8 0;
@@ -28,6 +32,10 @@ body {
       color: $textcolor;
       text-decoration: none;
     }
+  }
+
+  @media screen and (max-width: 1020px) {
+    justify-content: flex-end;
   }
 }
 
@@ -138,7 +146,7 @@ body {
     padding: 20px;
     text-align: center;
     font-weight: 200;
-    font-size: 1.3vw;
+    font-size: $deskfont;
   }
 }
 
@@ -152,7 +160,7 @@ body {
     position: relative;
     left: 15vw;
     margin-top: $basemargin * 2;
-    font-size: 2.5vw;
+    font-size: $deskfont * 2;
     margin-bottom: $basemargin * 5;
   }
   h3:before {
@@ -174,9 +182,10 @@ body {
   max-width: 80%;
   margin: 0 auto;
   h4 {
-    font-size: 1.5vw;
+    font-size: $deskfont;
   }
 }
+
 .arrowDiv {
   position: relative;
   flex: 1 0 25%;
@@ -212,11 +221,31 @@ body {
   }
 }
 
+@media screen and (max-width: 1020px) {
+  .dropdownDiv {
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arrowDiv {
+    width: 80%;
+    flex: 1 0 50%;
+  }
+}
+
 //PRICES
 
 .prices {
   background-color: $white;
   h3 {
+    color: $textcolor;
+    position: relative;
+    left: 15vw;
+    margin-top: $basemargin * 2;
+    font-size: $deskfont * 2;
+    margin-bottom: $basemargin * 5;
     color: $bgcolor;
   }
   h3:before {
@@ -234,20 +263,19 @@ body {
   max-width: 70%;
   margin: 0 auto 30px;
   color: $bgcolor;
-  font-size: 1.2vw;
+  font-size: $deskfont;
   p {
     margin: 50px 0;
   }
 }
 
 .email {
-  display: block;
+  display: inline-block;
   background-color: $gold;
-  padding: 1vw 2.6vw;
-  max-width: 12vw;
+  padding: 15px 20px;
   margin: 25px auto;
   border: none;
-  font-size: 1.2vw;
+  font-size: $deskfont;
   text-decoration: none;
   cursor: pointer;
   color: $bgcolor;
@@ -260,15 +288,44 @@ body {
 //Contact
 
 .contactText {
-  max-width: 70%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 70vw;
   margin: 0 auto 15px;
   color: $textcolor;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contactForm {
+  display: inline-flex;
+  flex-direction: column;
+  input[type="text"],
+  input[type="email"] {
+    margin: 10px 0;
+    font-size: $deskfont * 2;
+  }
+  border: 2px solid $gold;
+  padding: 50px;
+  font-size: $deskfont;
+  input:nth-child(9) {
+    margin: 15px auto;
+  }
+  textarea {
+    font-size: $deskfont * 2;
+  }
+  .col-75 {
+    float: left;
+    margin-top: 6px;
+  }
 }
 
 //Footer
 
 .logoImg2 {
-  max-width: 20vw;
+  max-width: 80%;
   left: 15vw;
   z-index: 3;
 }
@@ -278,20 +335,32 @@ body {
   justify-content: space-evenly;
   margin-bottom: 100px;
   h3 {
-    font-size: 1.5vw;
+    font-size: $deskfont * 2;
   }
+
+  @media screen and (max-width: 1020px) {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    margin-left: 70px;
+  }
+}
+
+.footerFlex {
+  margin: 15px 0;
 }
 
 .footerList {
   margin-top: 10px;
   li {
-    margin: 5px;
+    margin: 15px;
     color: $textcolor;
     list-style-type: none;
   }
 
   a {
     text-decoration: none;
+    font-size: $deskfont;
   }
 
   li:hover {
