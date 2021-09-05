@@ -20,6 +20,9 @@ body {
   background-color: #000;
   color: #d9dada;
 }
+a {
+  text-decoration: none;
+}
 .topnavsection {
   padding: 10px 80px 0;
   display: flex;
@@ -38,6 +41,11 @@ body {
   padding: 0 2px;
   color: #d9dada;
   text-decoration: none;
+}
+@media screen and (max-width: 1020px) {
+  .topnavsection {
+    justify-content: flex-end;
+  }
 }
 .verticalspacer {
   width: 2px;
@@ -136,7 +144,7 @@ body {
   max-width: 70%;
   padding: 20px;
   font-weight: 200;
-  font-size: 1.3vw;
+  font-size: 18px;
 }
 .profession {
   position: relative;
@@ -148,7 +156,7 @@ body {
   position: relative;
   left: 15vw;
   margin-top: 20px;
-  font-size: 2.5vw;
+  font-size: 36px;
   margin-bottom: 50px;
 }
 .profession h3:before {
@@ -163,15 +171,21 @@ body {
 }
 .dropdownDiv {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   max-width: 80%;
   margin: 0 auto;
 }
+.dropdownDiv h4 {
+  font-size: 18px;
+}
 .arrowDiv {
   position: relative;
+  flex: 1 0 25%;
   width: 20%;
   border-top: 2px solid #d9dada;
   padding: 5px;
-  margin: 20px;
+  margin: 30px 10px;
   cursor: pointer;
 }
 .arrowDiv h4 {
@@ -195,10 +209,35 @@ body {
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
+.professionList {
+  margin-top: 15px;
+  padding-left: 15px;
+}
+.professionList li {
+  padding: 5px;
+}
+@media screen and (max-width: 1020px) {
+  .dropdownDiv {
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrowDiv {
+    width: 80%;
+    flex: 1 0 50%;
+  }
+}
 .prices {
   background-color: #fff;
 }
 .prices h3 {
+  color: #d9dada;
+  position: relative;
+  left: 15vw;
+  margin-top: 20px;
+  font-size: 36px;
+  margin-bottom: 50px;
   color: #181026;
 }
 .prices h3:before {
@@ -215,19 +254,18 @@ body {
   max-width: 70%;
   margin: 0 auto 30px;
   color: #181026;
-  font-size: 1.2vw;
+  font-size: 18px;
 }
 .pricesText p {
   margin: 50px 0;
 }
 .email {
-  display: block;
+  display: inline-block;
   background-color: #e9c576;
-  padding: 1vw 2.6vw;
-  max-width: 12vw;
+  padding: 15px 20px;
   margin: 25px auto;
   border: none;
-  font-size: 1.2vw;
+  font-size: 18px;
   text-decoration: none;
   cursor: pointer;
   color: #181026;
@@ -237,12 +275,42 @@ body {
   background-color: #daa520;
 }
 .contactText {
-  max-width: 70%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 70vw;
   margin: 0 auto 15px;
   color: #d9dada;
 }
+@media screen and (max-width: 800px) {
+  .contactText {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contactForm {
+  display: inline-flex;
+  flex-direction: column;
+  border: 2px solid #e9c576;
+  padding: 50px;
+  font-size: 18px;
+}
+.contactForm input[type="email"],
+.contactForm input[type="text"] {
+  margin: 10px 0;
+  font-size: 36px;
+}
+.contactForm input:nth-child(9) {
+  margin: 15px auto;
+}
+.contactForm textarea {
+  font-size: 36px;
+}
+.contactForm .col-75 {
+  float: left;
+  margin-top: 6px;
+}
 .logoImg2 {
-  max-width: 20vw;
+  max-width: 80%;
   left: 15vw;
   z-index: 3;
 }
@@ -252,20 +320,32 @@ body {
   margin-bottom: 100px;
 }
 .footerDiv h3 {
-  font-size: 1.5vw;
+  font-size: 36px;
+}
+@media screen and (max-width: 1020px) {
+  .footerDiv {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    margin-left: 70px;
+  }
+}
+.footerFlex {
+  margin: 15px 0;
 }
 .footerList {
   margin-top: 10px;
 }
 .footerList li {
-  margin: 5px;
+  margin: 15px;
   color: #d9dada;
   list-style-type: none;
 }
 .footerList a {
   text-decoration: none;
+  font-size: 18px;
 }
 .footerList li:hover {
   color: #e9c576;
 }
-/*# sourceMappingURL=main.7fc479af.chunk.css.map */
+/*# sourceMappingURL=main.2c85411c.chunk.css.map */
