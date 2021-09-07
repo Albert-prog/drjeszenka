@@ -413,9 +413,9 @@ a {
 @media screen and (max-width: 1020px) {
   .footerDiv {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -447,5 +447,42 @@ a {
 
 .footerList li:hover {
   color: #e9c576;
+}
+
+@media screen and (max-width: 800px) {
+  .profession h3,
+  .prices h3 {
+    position: static;
+    margin: 20px;
+  }
+  .profession {
+    position: static;
+  }
+  .heroDiv {
+    position: static;
+    width: 100vw;
+  }
+  .herotitle {
+    position: absolute;
+    width: 80%;
+    top: 130px;
+    left: 0;
+    margin-left: 50px;
+  }
+  .herotitle h3 {
+    font-size: 20px;
+  }
+  .herotitle .btn {
+    font-size: 12px;
+  }
+  .logoImg {
+    max-width: 120px;
+    top: -5vw;
+  }
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm textarea {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=App.css.map */

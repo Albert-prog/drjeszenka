@@ -37,6 +37,7 @@ export default function Topnav() {
           height: 38,
           padding: '10px 20px',
           zIndex: 1000,
+          borderRadius: 0,
         },
       },
     },

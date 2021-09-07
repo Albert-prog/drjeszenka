@@ -339,7 +339,7 @@ a {
   }
 
   @media screen and (max-width: 1020px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: left;
     margin-left: 70px;
@@ -365,5 +365,48 @@ a {
 
   li:hover {
     color: $gold;
+  }
+}
+
+//media query
+
+@media screen and (max-width: 800px) {
+  .profession h3,
+  .prices h3 {
+    position: static;
+    margin: 20px;
+  }
+  .profession {
+    position: static;
+  }
+
+  .heroDiv {
+    position: static;
+    width: 100vw;
+  }
+
+  .herotitle {
+    position: absolute;
+    width: 80%;
+    top: 130px;
+    left: 0;
+    margin-left: 50px;
+    h3 {
+      font-size: 20px;
+    }
+    .btn {
+      font-size: 12px;
+    }
+  }
+
+  .logoImg {
+    max-width: 120px;
+    top: -5vw;
+  }
+
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm textarea {
+    font-size: $deskfont;
   }
 }
