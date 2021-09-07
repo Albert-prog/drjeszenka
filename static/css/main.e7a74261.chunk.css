@@ -324,7 +324,7 @@ a {
 }
 @media screen and (max-width: 1020px) {
   .footerDiv {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: left;
     margin-left: 70px;
@@ -348,4 +348,40 @@ a {
 .footerList li:hover {
   color: #e9c576;
 }
-/*# sourceMappingURL=main.2c85411c.chunk.css.map */
+@media screen and (max-width: 800px) {
+  .prices h3,
+  .profession h3 {
+    position: static;
+    margin: 20px;
+  }
+  .heroDiv,
+  .profession {
+    position: static;
+  }
+  .heroDiv {
+    width: 100vw;
+  }
+  .herotitle {
+    position: absolute;
+    width: 80%;
+    top: 130px;
+    left: 0;
+    margin-left: 50px;
+  }
+  .herotitle h3 {
+    font-size: 20px;
+  }
+  .herotitle .btn {
+    font-size: 12px;
+  }
+  .logoImg {
+    max-width: 120px;
+    top: -5vw;
+  }
+  .contactForm input[type="email"],
+  .contactForm input[type="text"],
+  .contactForm textarea {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=main.e7a74261.chunk.css.map */
