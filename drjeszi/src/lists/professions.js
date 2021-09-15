@@ -3,7 +3,7 @@ const professions = [
   "Külföldiek ingatlanszerzésével kapcsolatos engedély beszerzése",
   "Bérleti szerződések elkészítése", "Tartási- és életjáradéki szerződések elkészítése", "Ingatlanhoz kapcsolódó egyéb jogokra (haszonélvezeti jog, jelzálogjog, szolgalmi jog stb.) vonatkozó szerződések elkészítése"
 ]},
-  {name: "Társasági jog", desc: ["Cégalapítással, cégmódosítással, átalakulással, végelszámolással kapcsolatos tanácsadás és teljes körú jogi ügyintézés", "társasági jogi iratok készítése"]},
+  {name: "Társasági jog", desc: ["Cégalapítással, cégmódosítással, átalakulással, végelszámolással kapcsolatos tanácsadás és teljes körú jogi ügyintézés", "Társasági jogi iratok készítése"]},
   {name: "Civil szervezetek joga", desc: ["Egyesület alapítása, módosítása", "Sportegyesület alapítása, módosítása", "Közgyűlések lebonyolítása"]},
   {name: "Szerződések joga", desc: ["Klasszikus polgári jogi szerződések elkészítése, véleményezése", "Együttműködési és titoktartási megállapodások"]},
   {name: "Gazdasági jog", desc: ["Gazdasági társaságok átalakulása, végelszámolása, felszámolása során teljes körű jogi ügyintézés", "Csőd- és felszámolási eljárás során teljes körű jogi ügyintézés"]},

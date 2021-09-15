@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -215,12 +216,12 @@ a {
 .arrowDiv {
   position: relative;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 25%;
-          flex: 1 0 25%;
-  width: 20%;
+      -ms-flex: 1 0 33%;
+          flex: 1 0 33%;
+  width: 25%;
   border-top: #d9dada 2px solid;
   padding: 5px;
-  margin: 30px 10px;
+  margin: 30px;
   cursor: pointer;
 }
 
@@ -258,6 +259,17 @@ a {
 
 .professionList li {
   padding: 5px;
+  list-style: none;
+}
+
+.professionList li:before {
+  content: "§";
+  position: relative;
+  margin-right: 10px;
+  top: 0;
+  left: -10px;
+  display: inline-block;
+  color: #e9c576;
 }
 
 @media screen and (max-width: 1020px) {

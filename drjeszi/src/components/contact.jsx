@@ -48,7 +48,7 @@ function Contact() {
     <div className="profession" id='contact'>
       <h3>KAPCSOLAT</h3>
       <div className="contactText">
-        <p>Keressen bizalommal! Minden megkresésre legkésőbb 72 órán belül válaszolok!</p>
+        <p>Keressen bizalommal! Minden megkeresésre legkésőbb 72 órán belül válaszolok!</p>
       
         <div className="formContainer">
           <form className="contactForm" onSubmit={sendEmail}>

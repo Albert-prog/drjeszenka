@@ -189,11 +189,11 @@ a {
 
 .arrowDiv {
   position: relative;
-  flex: 1 0 25%;
-  width: 20%;
+  flex: 1 0 33%;
+  width: 25%;
   border-top: $textcolor 2px solid;
   padding: 5px;
-  margin: 30px 10px;
+  margin: 30px;
   cursor: pointer;
   h4 {
     display: inline;
@@ -219,6 +219,16 @@ a {
   padding-left: 15px;
   li {
     padding: 5px;
+    list-style: none;
+  }
+  li:before {
+    content: "§";
+    position: relative;
+    margin-right: 10px;
+    top: 0;
+    left: -10px;
+    display: inline-block;
+    color: $gold;
   }
 }
 
