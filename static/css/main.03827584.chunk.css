@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -17,7 +18,7 @@ code {
   font-family: "Garamond";
 }
 body {
-  background-color: #000;
+  background-color: #090b0c;
   color: #d9dada;
 }
 a {
@@ -27,7 +28,7 @@ a {
   padding: 10px 80px 0;
   display: flex;
   justify-content: space-between;
-  background-color: #181026;
+  background-color: rgba(0, 0, 0, 0.555);
   color: #d9dada;
 }
 .topnavsection .topnavdiv {
@@ -45,6 +46,7 @@ a {
 @media screen and (max-width: 1020px) {
   .topnavsection {
     justify-content: flex-end;
+    padding: 10px 40px 0;
   }
 }
 .verticalspacer {
@@ -64,7 +66,7 @@ a {
   text-decoration: none;
 }
 .navbar a:hover {
-  background-color: gold;
+  background-color: #e9c576;
   color: #181026;
 }
 .heroDiv {
@@ -99,7 +101,7 @@ a {
 .herotitle {
   color: #d9dada;
   width: 50%;
-  top: 15em;
+  top: 10em;
   margin-right: auto;
   z-index: 5;
 }
@@ -122,7 +124,7 @@ a {
   background-color: #e9c576;
   padding: 1.5vw 3.5vw;
   border: none;
-  font-size: 1vw;
+  font-size: 22px;
   text-decoration: none;
   cursor: pointer;
   color: #181026;
@@ -144,7 +146,7 @@ a {
   max-width: 70%;
   padding: 20px;
   font-weight: 200;
-  font-size: 18px;
+  font-size: 22px;
 }
 .profession {
   position: relative;
@@ -156,7 +158,7 @@ a {
   position: relative;
   left: 15vw;
   margin-top: 20px;
-  font-size: 36px;
+  font-size: 44px;
   margin-bottom: 50px;
 }
 .profession h3:before {
@@ -173,19 +175,19 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
 }
 .dropdownDiv h4 {
-  font-size: 18px;
+  font-size: 22px;
 }
 .arrowDiv {
   position: relative;
-  flex: 1 0 25%;
-  width: 20%;
+  flex: 1 0 33%;
+  width: 25%;
   border-top: 2px solid #d9dada;
   padding: 5px;
-  margin: 30px 10px;
+  margin: 30px;
   cursor: pointer;
 }
 .arrowDiv h4 {
@@ -215,6 +217,16 @@ a {
 }
 .professionList li {
   padding: 5px;
+  list-style: none;
+}
+.professionList li:before {
+  content: "§";
+  position: relative;
+  margin-right: 10px;
+  top: 0;
+  left: -10px;
+  display: inline-block;
+  color: #e9c576;
 }
 @media screen and (max-width: 1020px) {
   .dropdownDiv {
@@ -236,7 +248,7 @@ a {
   position: relative;
   left: 15vw;
   margin-top: 20px;
-  font-size: 36px;
+  font-size: 44px;
   margin-bottom: 50px;
   color: #181026;
 }
@@ -253,8 +265,9 @@ a {
 .pricesText {
   max-width: 70%;
   margin: 0 auto 30px;
+  text-align: justify;
   color: #181026;
-  font-size: 18px;
+  font-size: 22px;
 }
 .pricesText p {
   margin: 50px 0;
@@ -265,7 +278,7 @@ a {
   padding: 15px 20px;
   margin: 25px auto;
   border: none;
-  font-size: 18px;
+  font-size: 22px;
   text-decoration: none;
   cursor: pointer;
   color: #181026;
@@ -274,11 +287,18 @@ a {
 .email:hover {
   background-color: #daa520;
 }
+.email:disabled {
+  background-color: #ccc;
+  color: #666;
+}
 .contactText {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   max-width: 70vw;
   margin: 0 auto 15px;
+  font-size: 22px;
   color: #d9dada;
 }
 @media screen and (max-width: 800px) {
@@ -290,24 +310,39 @@ a {
 .contactForm {
   display: inline-flex;
   flex-direction: column;
+  margin: 20px auto;
   border: 2px solid #e9c576;
   padding: 50px;
-  font-size: 18px;
+  font-size: 22px;
 }
 .contactForm input[type="email"],
 .contactForm input[type="text"] {
   margin: 10px 0;
-  font-size: 36px;
+  font-size: 33px;
 }
 .contactForm input:nth-child(9) {
   margin: 15px auto;
 }
 .contactForm textarea {
-  font-size: 36px;
+  font-size: 35.2px;
 }
 .contactForm .col-75 {
   float: left;
   margin-top: 6px;
+}
+.contactForm .formConsent {
+  display: flex;
+}
+.contactForm p {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  font-size: 22px;
+  margin-left: 10px;
+}
+.contactForm p span {
+  cursor: pointer;
+  text-decoration: underline;
 }
 .logoImg2 {
   max-width: 80%;
@@ -318,9 +353,10 @@ a {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 100px;
+  background-color: #090b0c;
 }
 .footerDiv h3 {
-  font-size: 36px;
+  font-size: 44px;
 }
 @media screen and (max-width: 1020px) {
   .footerDiv {
@@ -329,21 +365,44 @@ a {
     align-items: left;
     margin-left: 70px;
   }
+  .footerDiv .footerDisclaimer {
+    max-width: 90%;
+    margin: 30px auto;
+    padding-right: 40px;
+  }
+  .footerDiv .footerDisclaimer p {
+    text-align: left;
+  }
+}
+.footerDisclaimer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 20%;
+}
+.footerDisclaimer p {
+  margin-top: 10px;
+  display: inline-block;
+  text-align: justify;
 }
 .footerFlex {
   margin: 15px 0;
+}
+.footerFlex h3 {
+  font-size: 22px;
 }
 .footerList {
   margin-top: 10px;
 }
 .footerList li {
+  font-size: 14px;
   margin: 15px;
   color: #d9dada;
   list-style-type: none;
 }
 .footerList a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
 }
 .footerList li:hover {
   color: #e9c576;
@@ -353,6 +412,7 @@ a {
   .profession h3 {
     position: static;
     margin: 20px;
+    font-size: 33px;
   }
   .heroDiv,
   .profession {
@@ -364,24 +424,25 @@ a {
   .herotitle {
     position: absolute;
     width: 80%;
-    top: 130px;
+    top: 100px;
     left: 0;
     margin-left: 50px;
   }
   .herotitle h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
   .herotitle .btn {
-    font-size: 12px;
+    font-size: 14px;
+    padding: 12px;
   }
   .logoImg {
     max-width: 120px;
-    top: -5vw;
+    top: -90px;
   }
   .contactForm input[type="email"],
   .contactForm input[type="text"],
   .contactForm textarea {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
-/*# sourceMappingURL=main.e7a74261.chunk.css.map */
+/*# sourceMappingURL=main.03827584.chunk.css.map */

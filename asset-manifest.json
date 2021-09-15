@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/drjeszenka/static/css/main.e7a74261.chunk.css",
-    "main.js": "/drjeszenka/static/js/main.cab97afb.chunk.js",
-    "main.js.map": "/drjeszenka/static/js/main.cab97afb.chunk.js.map",
-    "runtime-main.js": "/drjeszenka/static/js/runtime-main.541e1306.js",
-    "runtime-main.js.map": "/drjeszenka/static/js/runtime-main.541e1306.js.map",
-    "static/js/2.ea0b9780.chunk.js": "/drjeszenka/static/js/2.ea0b9780.chunk.js",
-    "static/js/2.ea0b9780.chunk.js.map": "/drjeszenka/static/js/2.ea0b9780.chunk.js.map",
-    "static/js/3.44102cf9.chunk.js": "/drjeszenka/static/js/3.44102cf9.chunk.js",
-    "static/js/3.44102cf9.chunk.js.map": "/drjeszenka/static/js/3.44102cf9.chunk.js.map",
+    "main.css": "/drjeszenka/static/css/main.03827584.chunk.css",
+    "main.js": "/drjeszenka/static/js/main.54ecec0f.chunk.js",
+    "main.js.map": "/drjeszenka/static/js/main.54ecec0f.chunk.js.map",
+    "runtime-main.js": "/drjeszenka/static/js/runtime-main.5e020528.js",
+    "runtime-main.js.map": "/drjeszenka/static/js/runtime-main.5e020528.js.map",
+    "static/js/2.3a3f3037.chunk.js": "/drjeszenka/static/js/2.3a3f3037.chunk.js",
+    "static/js/2.3a3f3037.chunk.js.map": "/drjeszenka/static/js/2.3a3f3037.chunk.js.map",
+    "static/js/3.a5007f81.chunk.js": "/drjeszenka/static/js/3.a5007f81.chunk.js",
+    "static/js/3.a5007f81.chunk.js.map": "/drjeszenka/static/js/3.a5007f81.chunk.js.map",
     "index.html": "/drjeszenka/index.html",
-    "static/css/main.e7a74261.chunk.css.map": "/drjeszenka/static/css/main.e7a74261.chunk.css.map",
-    "static/js/2.ea0b9780.chunk.js.LICENSE.txt": "/drjeszenka/static/js/2.ea0b9780.chunk.js.LICENSE.txt",
+    "static/css/main.03827584.chunk.css.map": "/drjeszenka/static/css/main.03827584.chunk.css.map",
+    "static/js/2.3a3f3037.chunk.js.LICENSE.txt": "/drjeszenka/static/js/2.3a3f3037.chunk.js.LICENSE.txt",
     "static/media/Urak676.411a731e.webp": "/drjeszenka/static/media/Urak676.411a731e.webp",
     "static/media/logo.0ef6cd50.png": "/drjeszenka/static/media/logo.0ef6cd50.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.541e1306.js",
-    "static/js/2.ea0b9780.chunk.js",
-    "static/css/main.e7a74261.chunk.css",
-    "static/js/main.cab97afb.chunk.js"
+    "static/js/runtime-main.5e020528.js",
+    "static/js/2.3a3f3037.chunk.js",
+    "static/css/main.03827584.chunk.css",
+    "static/js/main.54ecec0f.chunk.js"
   ]
 }
