@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 0;
+  font-size: 100%;
+  list-style: none;
   font-family: "Garamond";
 }
 body {
@@ -14,6 +17,7 @@ body {
 a {
   text-decoration: none;
 }
+
 //topnav
 .topnavsection {
   padding: $basemargin $basemargin * 8 0;
@@ -53,6 +57,9 @@ a {
   justify-content: flex-end;
   margin: $basemargin * 2 $basemargin * 8;
   color: $textcolor;
+  h3 {
+    font-size: $deskfont;
+  }
   a {
     padding: $basemargin;
     color: $textcolor;
@@ -68,8 +75,6 @@ a {
 
 .heroDiv {
   display: block;
-  position: relative;
-  top: -130px;
   width: 95vw;
   height: auto;
   overflow: hidden;
@@ -87,10 +92,9 @@ a {
 }
 
 .logoImg {
-  display: inline;
-  position: relative;
-  max-width: 20vw;
-  top: -3vw;
+  position: absolute;
+  max-width: 200px;
+  top: 5vw;
   left: 15vw;
   z-index: 3;
 }
@@ -104,9 +108,8 @@ a {
   margin-right: auto;
   z-index: 5;
   h3 {
-    margin-top: $basemargin * 2;
     font-size: 2.5vw;
-    margin-bottom: $basemargin * 5;
+    margin-bottom: $basemargin * 6;
   }
   p:before {
     content: "";
@@ -153,8 +156,6 @@ a {
 
 //Profession
 .profession {
-  position: relative;
-  top: -130px;
   overflow-x: hidden;
   h3 {
     color: $textcolor;
@@ -181,7 +182,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-evenly;
   max-width: 70%;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   h4 {
     font-size: $deskfont;
   }
@@ -272,7 +273,7 @@ a {
 }
 .pricesText {
   max-width: 70%;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   text-align: justify;
   color: $bgcolor;
   font-size: $deskfont;
@@ -344,10 +345,14 @@ a {
 
   .formConsent {
     display: flex;
+    flex-direction: column;
+    div {
+      display: flex;
+      margin-top: 30px;
+    }
   }
   p {
     max-width: fit-content;
-    font-size: $deskfont;
     margin-left: 10px;
     span {
       cursor: pointer;
@@ -359,7 +364,7 @@ a {
 //Footer
 
 .logoImg2 {
-  max-width: 80%;
+  max-width: 70%;
   left: 15vw;
   z-index: 3;
 }
@@ -430,11 +435,19 @@ a {
 //media query
 
 @media screen and (max-width: 800px) {
+  .pricesText {
+    max-width: 85%;
+  }
+
+  p {
+    font-size: $mobfont;
+  }
+
   .profession h3,
   .prices h3 {
     position: static;
     margin: 20px;
-    font-size: $deskfont * 1.5;
+    font-size: $deskfont * 1.2;
   }
   .profession {
     position: static;
@@ -447,11 +460,11 @@ a {
 
   .herotitle {
     position: absolute;
-    width: 80%;
     top: 100px;
     left: 0;
     margin-left: 50px;
     h3 {
+      margin-bottom: $basemargin * 3;
       font-size: 16px;
     }
     .btn {
@@ -461,13 +474,18 @@ a {
   }
 
   .logoImg {
-    max-width: 120px;
-    top: -90px;
+    max-width: 100px;
   }
 
   .contactForm input[type="text"],
   .contactForm input[type="email"],
-  .contactForm textarea {
-    font-size: $deskfont;
+  .contactForm textarea,
+  .contactForm > label {
+    font-size: $mobfont * 1.2;
   }
+}
+
+.footerDiv {
+  margin-top: 100px;
+  margin-left: 50px;
 }
