@@ -15,6 +15,9 @@ code {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 0;
+  font-size: 100%;
+  list-style: none;
   font-family: "Garamond";
 }
 body {
@@ -60,6 +63,9 @@ a {
   margin: 20px 80px;
   color: #d9dada;
 }
+.navbar h3 {
+  font-size: 22px;
+}
 .navbar a {
   padding: 10px;
   color: #d9dada;
@@ -70,17 +76,16 @@ a {
   color: #181026;
 }
 .heroDiv {
-  top: -130px;
   width: 95vw;
 }
 .heroDiv,
 .heroDiv img {
   display: block;
-  position: relative;
   height: auto;
   overflow: hidden;
 }
 .heroDiv img {
+  position: relative;
   right: -90px;
   width: 70%;
   float: right;
@@ -88,27 +93,24 @@ a {
   z-index: -19;
 }
 .logoImg {
-  display: inline;
-  max-width: 20vw;
-  top: -3vw;
-  z-index: 3;
-}
-.herotitle,
-.logoImg {
-  position: relative;
+  position: absolute;
+  max-width: 200px;
+  top: 5vw;
   left: 15vw;
+  z-index: 3;
 }
 .herotitle {
   color: #d9dada;
+  position: relative;
   width: 50%;
   top: 10em;
+  left: 15vw;
   margin-right: auto;
   z-index: 5;
 }
 .herotitle h3 {
-  margin-top: 20px;
   font-size: 2.5vw;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .herotitle p:before {
   content: "";
@@ -149,8 +151,6 @@ a {
   font-size: 22px;
 }
 .profession {
-  position: relative;
-  top: -130px;
   overflow-x: hidden;
 }
 .profession h3 {
@@ -176,7 +176,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-evenly;
   max-width: 70%;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 .dropdownDiv h4 {
   font-size: 22px;
@@ -264,7 +264,7 @@ a {
 }
 .pricesText {
   max-width: 70%;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   text-align: justify;
   color: #181026;
   font-size: 22px;
@@ -332,12 +332,16 @@ a {
 }
 .contactForm .formConsent {
   display: flex;
+  flex-direction: column;
+}
+.contactForm .formConsent div {
+  display: flex;
+  margin-top: 30px;
 }
 .contactForm p {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  font-size: 22px;
   margin-left: 10px;
 }
 .contactForm p span {
@@ -345,7 +349,7 @@ a {
   text-decoration: underline;
 }
 .logoImg2 {
-  max-width: 80%;
+  max-width: 70%;
   left: 15vw;
   z-index: 3;
 }
@@ -395,7 +399,7 @@ a {
   margin-top: 10px;
 }
 .footerList li {
-  font-size: 14px;
+  font-size: 18px;
   margin: 15px;
   color: #d9dada;
   list-style-type: none;
@@ -408,11 +412,17 @@ a {
   color: #e9c576;
 }
 @media screen and (max-width: 800px) {
+  .pricesText {
+    max-width: 85%;
+  }
+  p {
+    font-size: 18px;
+  }
   .prices h3,
   .profession h3 {
     position: static;
     margin: 20px;
-    font-size: 33px;
+    font-size: 26.4px;
   }
   .heroDiv,
   .profession {
@@ -423,12 +433,12 @@ a {
   }
   .herotitle {
     position: absolute;
-    width: 80%;
     top: 100px;
     left: 0;
     margin-left: 50px;
   }
   .herotitle h3 {
+    margin-bottom: 30px;
     font-size: 16px;
   }
   .herotitle .btn {
@@ -436,13 +446,17 @@ a {
     padding: 12px;
   }
   .logoImg {
-    max-width: 120px;
-    top: -90px;
+    max-width: 100px;
   }
+  .contactForm > label,
   .contactForm input[type="email"],
   .contactForm input[type="text"],
   .contactForm textarea {
-    font-size: 22px;
+    font-size: 21.6px;
   }
 }
-/*# sourceMappingURL=main.03827584.chunk.css.map */
+.footerDiv {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+/*# sourceMappingURL=main.aacd2fbc.chunk.css.map */
