@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/drjeszenka/static/css/main.aacd2fbc.chunk.css",
-    "main.js": "/drjeszenka/static/js/main.a2c027ea.chunk.js",
-    "main.js.map": "/drjeszenka/static/js/main.a2c027ea.chunk.js.map",
-    "runtime-main.js": "/drjeszenka/static/js/runtime-main.15a9ed57.js",
-    "runtime-main.js.map": "/drjeszenka/static/js/runtime-main.15a9ed57.js.map",
-    "static/js/2.ce8ee153.chunk.js": "/drjeszenka/static/js/2.ce8ee153.chunk.js",
-    "static/js/2.ce8ee153.chunk.js.map": "/drjeszenka/static/js/2.ce8ee153.chunk.js.map",
-    "static/js/3.38b5f2a7.chunk.js": "/drjeszenka/static/js/3.38b5f2a7.chunk.js",
-    "static/js/3.38b5f2a7.chunk.js.map": "/drjeszenka/static/js/3.38b5f2a7.chunk.js.map",
-    "index.html": "/drjeszenka/index.html",
-    "static/css/main.aacd2fbc.chunk.css.map": "/drjeszenka/static/css/main.aacd2fbc.chunk.css.map",
-    "static/js/2.ce8ee153.chunk.js.LICENSE.txt": "/drjeszenka/static/js/2.ce8ee153.chunk.js.LICENSE.txt",
-    "static/media/Urak676.411a731e.webp": "/drjeszenka/static/media/Urak676.411a731e.webp",
-    "static/media/logo.0ef6cd50.png": "/drjeszenka/static/media/logo.0ef6cd50.png"
+    "main.css": "/static/css/main.aacd2fbc.chunk.css",
+    "main.js": "/static/js/main.a2c027ea.chunk.js",
+    "main.js.map": "/static/js/main.a2c027ea.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.15a9ed57.js",
+    "runtime-main.js.map": "/static/js/runtime-main.15a9ed57.js.map",
+    "static/js/2.ce8ee153.chunk.js": "/static/js/2.ce8ee153.chunk.js",
+    "static/js/2.ce8ee153.chunk.js.map": "/static/js/2.ce8ee153.chunk.js.map",
+    "static/js/3.38b5f2a7.chunk.js": "/static/js/3.38b5f2a7.chunk.js",
+    "static/js/3.38b5f2a7.chunk.js.map": "/static/js/3.38b5f2a7.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.aacd2fbc.chunk.css.map": "/static/css/main.aacd2fbc.chunk.css.map",
+    "static/js/2.ce8ee153.chunk.js.LICENSE.txt": "/static/js/2.ce8ee153.chunk.js.LICENSE.txt",
+    "static/media/Urak676.411a731e.webp": "/static/media/Urak676.411a731e.webp",
+    "static/media/logo.0ef6cd50.png": "/static/media/logo.0ef6cd50.png"
   },
   "entrypoints": [
     "static/js/runtime-main.15a9ed57.js",
