@@ -49,7 +49,7 @@ function Contact() {
 
 
   return (
-    <div className="profession" id='contact'>
+    <div className="contact" id='contact'>
       <h3>KAPCSOLAT</h3>
       <div className="contactText">
         <p>Keressen bizalommal! Minden megkeresésre legkésőbb 72 órán belül válaszolok!</p>
@@ -77,9 +77,9 @@ function Contact() {
               <div>
                 <Checkbox defaultChecked={!checkedData} onChange={()=>setCheckedData(!checkedData)}
                 sx={{
-                  color: '#e9c576',
+                  color: '#181026;',
                   '&.Mui-checked': {
-                    color: '#e9c576',
+                    color: '#181026;',
                   },
                 }} 
                 />
@@ -88,9 +88,9 @@ function Contact() {
               <div>
               <Checkbox defaultChecked={!checkedConsent} onChange={()=>setCheckedConsent(!checkedConsent)}
                 sx={{
-                  color: '#e9c576',
+                  color: '#181026;',
                   '&.Mui-checked': {
-                    color: '#e9c576',
+                    color: '#181026;',
                   },
                 }} 
                 />

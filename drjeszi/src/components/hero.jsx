@@ -8,7 +8,8 @@ export default function Hero() {
     <div className='heroDiv'>
       <img src={profil} alt="jeszenkaprofil"/>
       <div className="herotitle">
-        <h3>DR. JESZENKA ÁDÁM <br /> ÜGYVÉD, <br/> GAZDASÁGI JOGI SZAKJOGÁSZ</h3>
+        <h4>Forduljon hozzám bizalommal!</h4>
+        <h3>DR. JESZENKA ÁDÁM <br/> ÜGYVÉD, <br/>GAZDASÁGI JOGI SZAKJOGÁSZ</h3>
         <Button text='KAPCSOLATFELVÉTEL' url='#contact' class="btn"/>
       </div>
     </div>

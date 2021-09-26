@@ -1,18 +1,13 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:weight@400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 0;
-  font-size: 100%;
   list-style: none;
-  font-family: "Garamond";
-}
-
-body {
-  background-color: #090b0c;
-  color: #d9dada;
+  font-family: "Ibarra Real Nova", serif;
 }
 
 a {
@@ -21,13 +16,14 @@ a {
 
 .topnavsection {
   padding: 10px 80px 0;
+  width: 99vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.555);
+  background-color: #090b0c;
   color: #d9dada;
 }
 
@@ -70,8 +66,15 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 20px 80px;
+  position: fixed;
+  top: 50px;
+  right: 30px;
+  margin: 0 80px;
+  background-color: transparent;
   color: #d9dada;
+  z-index: 50;
+  -webkit-transition: 0.6s ease-in;
+  transition: 0.6s ease-in;
 }
 
 .navbar h3 {
@@ -89,46 +92,83 @@ a {
   color: #181026;
 }
 
+.navbarDeactive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .heroDiv {
   display: block;
-  width: 95vw;
+  width: 99vw;
   height: auto;
   overflow: hidden;
+  background-color: #090b0c;
 }
 
 .heroDiv img {
   display: block;
   position: relative;
   overflow: hidden;
-  right: -90px;
-  width: 70%;
+  top: 0;
+  right: 0px;
+  width: 75%;
   height: auto;
   float: right;
   opacity: 50%;
-  z-index: -19;
+  z-index: 1;
+}
+
+@media screen and (max-width: 370px) {
+  .heroDiv img {
+    display: none;
+    width: 70%;
+    top: 80px;
+    right: -80px;
+  }
+}
+
+@media screen and (min-width: 371px) and (max-width: 800px) {
+  .heroDiv img {
+    width: 70%;
+    top: 70px;
+    right: -60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heroDiv {
+    height: 30vh;
+  }
 }
 
 .logoImg {
   position: absolute;
-  max-width: 200px;
+  max-width: 250px;
   top: 5vw;
-  left: 15vw;
+  left: 6vw;
   z-index: 3;
 }
 
 .herotitle {
   color: #d9dada;
-  position: relative;
-  width: 50%;
-  top: 10em;
+  position: absolute;
+  width: 80%;
+  top: 20em;
   left: 15vw;
   margin-right: auto;
   z-index: 5;
 }
 
+@media screen and (max-width: 500px) {
+  .herotitle {
+    width: 60%;
+  }
+}
+
 .herotitle h3 {
-  font-size: 2.5vw;
-  margin-bottom: 60px;
+  font-size: 2.2vw;
+  margin-bottom: 10px;
 }
 
 .herotitle p:before {
@@ -142,8 +182,33 @@ a {
   position: absolute;
 }
 
+.herotitle h4 {
+  margin-bottom: 35px;
+  margin-top: -20px;
+}
+
+@media screen and (max-width: 500px) {
+  .herotitle h4 {
+    display: none;
+  }
+}
+
+.herotitle h4:before {
+  content: "";
+  display: block;
+  width: 6vw;
+  height: 2px;
+  background: #e9c576;
+  left: -130px;
+  -webkit-transform: translate(0, 5px);
+          transform: translate(0, 5px);
+  position: absolute;
+}
+
 .btn {
   background-color: #e9c576;
+  position: absolute;
+  top: 10em;
   padding: 1.5vw 3.5vw;
   border: none;
   font-size: 22px;
@@ -153,37 +218,99 @@ a {
   z-index: 2;
 }
 
+@media screen and (max-width: 500px) {
+  .btn {
+    top: 8em;
+  }
+}
+
 .btn:hover {
   background-color: goldenrod;
 }
 
 .introSection {
-  margin: 0 auto;
-  text-align: center;
   background-color: white;
   color: #181026;
 }
 
-.introSection p {
+.introSection .introText {
   max-width: 70%;
+  margin: 50px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 0.5fr 5.5fr;
+      grid-template-columns: 3fr 0.5fr 5.5fr;
+}
+
+@media screen and (max-width: 1000px) {
+  .introSection .introText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 85%;
+  }
+  .introSection .introText h3 {
+    font-size: 26.4px;
+    margin-right: 0;
+  }
+}
+
+.introSection p {
   margin: 0px auto;
   padding: 20px;
-  text-align: center;
+  text-align: left;
   font-weight: 200;
+  font-size: 18.33333px;
+}
+
+.introSection h3 {
+  font-size: 50.6px;
+  margin-right: 50px;
+}
+
+.introSection h5 {
+  color: #181026;
+  margin-top: 20px;
+  text-align: left;
   font-size: 22px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .introSection h5 {
+    display: none;
+  }
+}
+
+.introSection h5:before {
+  content: "";
+  display: block;
+  width: 6vw;
+  height: 2px;
+  background: #e9c576;
+  left: -130px;
+  -webkit-transform: translate(0, 10px);
+          transform: translate(0, 10px);
+  position: relative;
 }
 
 .profession {
-  overflow-x: hidden;
+  background-color: #181026;
+  color: #d9dada;
+  padding-top: 20px;
 }
 
 .profession h3 {
   color: #d9dada;
+  display: inline-block;
   position: relative;
   left: 15vw;
   margin-top: 20px;
   font-size: 44px;
-  margin-bottom: 50px;
 }
 
 .profession h3:before {
@@ -207,7 +334,7 @@ a {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   max-width: 70%;
-  margin: 0 auto 30px;
+  margin: 0 auto;
 }
 
 .dropdownDiv h4 {
@@ -300,12 +427,11 @@ a {
 }
 
 .prices h3 {
-  color: #d9dada;
+  display: inline-block;
   position: relative;
   left: 15vw;
   margin-top: 20px;
   font-size: 44px;
-  margin-bottom: 50px;
   color: #181026;
 }
 
@@ -354,6 +480,32 @@ a {
   color: #666666;
 }
 
+.contact {
+  background-color: #e9c576;
+  color: #181026;
+  padding: 20px 0;
+}
+
+.contact h3 {
+  position: relative;
+  display: inline-block;
+  left: 15vw;
+  margin-top: 20px;
+  font-size: 44px;
+  margin-bottom: 50px;
+}
+
+.contact h3:before {
+  content: "";
+  display: block;
+  width: 6vw;
+  height: 2px;
+  background: #181026;
+  left: -130px;
+  top: 50%;
+  position: absolute;
+}
+
 .contactText {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,7 +523,7 @@ a {
   max-width: 70vw;
   margin: 0 auto 15px;
   font-size: 22px;
-  color: #d9dada;
+  color: #181026;
 }
 
 @media screen and (max-width: 800px) {
@@ -395,15 +547,13 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 20px auto;
-  border: 2px solid #e9c576;
-  padding: 50px;
   font-size: 22px;
 }
 
 .contactForm input[type="text"],
 .contactForm input[type="email"] {
   margin: 10px 0;
-  font-size: 33px;
+  font-size: 28.6px;
 }
 
 .contactForm input:nth-child(9) {
@@ -411,7 +561,7 @@ a {
 }
 
 .contactForm textarea {
-  font-size: 35.2px;
+  font-size: 44px;
 }
 
 .contactForm .col-75 {
@@ -433,6 +583,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 30px;
 }
 
@@ -440,6 +593,7 @@ a {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  font-size: 18.33333px;
   margin-left: 10px;
 }
 
@@ -458,11 +612,13 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  top: -20px;
+  bottom: -20px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-bottom: 100px;
-  background-color: #090b0c;
+  background-color: #181026;
 }
 
 .footerDiv h3 {
@@ -481,7 +637,6 @@ a {
     -webkit-box-align: left;
         -ms-flex-align: left;
             align-items: left;
-    margin-left: 70px;
   }
   .footerDiv .footerDisclaimer {
     max-width: 90%;
@@ -497,6 +652,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #d9dada;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -513,7 +669,8 @@ a {
 }
 
 .footerFlex {
-  margin: 15px 0;
+  color: #d9dada;
+  margin: 15px 20px;
 }
 
 .footerFlex h3 {
@@ -548,7 +705,8 @@ a {
     font-size: 18px;
   }
   .profession h3,
-  .prices h3 {
+  .prices h3,
+  .contact h3 {
     position: static;
     margin: 20px;
     font-size: 26.4px;
@@ -562,8 +720,9 @@ a {
   }
   .herotitle {
     position: absolute;
+    width: 60%;
     top: 100px;
-    left: 0;
+    left: -5vw;
     margin-left: 50px;
   }
   .herotitle h3 {
@@ -583,10 +742,5 @@ a {
   .contactForm > label {
     font-size: 21.6px;
   }
-}
-
-.footerDiv {
-  margin-top: 100px;
-  margin-left: 50px;
 }
 /*# sourceMappingURL=App.css.map */

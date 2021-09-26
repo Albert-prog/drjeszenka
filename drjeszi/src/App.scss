@@ -1,17 +1,13 @@
 @import "src/variables";
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:weight@400;500;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   border: 0;
-  font-size: 100%;
   list-style: none;
-  font-family: "Garamond";
-}
-body {
-  background-color: #090b0c;
-  color: $textcolor;
+  font-family: "Ibarra Real Nova", serif;
 }
 
 a {
@@ -21,9 +17,10 @@ a {
 //topnav
 .topnavsection {
   padding: $basemargin $basemargin * 8 0;
+  width: 99vw;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.555);
+  background-color: #090b0c;
   color: $textcolor;
   .topnavdiv {
     padding: $basemargin;
@@ -55,8 +52,18 @@ a {
 .navbar {
   display: flex;
   justify-content: flex-end;
-  margin: $basemargin * 2 $basemargin * 8;
+  position: fixed;
+  top: 50px;
+  right: 30px;
+  margin: 0 $basemargin * 8;
+  background-color: transparent;
   color: $textcolor;
+  z-index: 50;
+  -webkit-transition: 0.6s ease-in;
+  -moz-transition: 0.6s ease-in;
+  -o-transition: 0.6s ease-in;
+  -ms-transition: 0.6s ease-in;
+  transition: 0.6s ease-in;
   h3 {
     font-size: $deskfont;
   }
@@ -71,45 +78,68 @@ a {
   }
 }
 
+.navbarDeactive {
+  display: flex;
+}
+
 //Hero
 
 .heroDiv {
   display: block;
-  width: 95vw;
+  width: 99vw;
   height: auto;
   overflow: hidden;
+  background-color: #090b0c;
   img {
     display: block;
     position: relative;
     overflow: hidden;
-    right: -90px;
-    width: 70%;
+    top: 0;
+    right: 0px;
+    width: 75%;
     height: auto;
     float: right;
     opacity: 50%;
-    z-index: -19;
+    z-index: 1;
+    @media screen and (max-width: 370px) {
+      display: none;
+      width: 70%;
+      top: 80px;
+      right: -80px;
+    }
+    @media screen and (min-width: 371px) and (max-width: 800px) {
+      width: 70%;
+      top: 70px;
+      right: -60px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    height: 30vh;
   }
 }
 
 .logoImg {
   position: absolute;
-  max-width: 200px;
+  max-width: 250px;
   top: 5vw;
-  left: 15vw;
+  left: 6vw;
   z-index: 3;
 }
 
 .herotitle {
   color: $textcolor;
-  position: relative;
-  width: 50%;
-  top: 10em;
+  position: absolute;
+  width: 80%;
+  top: 20em;
   left: 15vw;
   margin-right: auto;
   z-index: 5;
+  @media screen and (max-width: 500px) {
+    width: 60%;
+  }
   h3 {
-    font-size: 2.5vw;
-    margin-bottom: $basemargin * 6;
+    font-size: 2.2vw;
+    margin-bottom: $basemargin;
   }
   p:before {
     content: "";
@@ -121,10 +151,30 @@ a {
     top: 3%;
     position: absolute;
   }
+  h4 {
+    margin-bottom: 35px;
+    margin-top: -20px;
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+
+  h4:before {
+    content: "";
+    display: block;
+    width: 6vw;
+    height: 2px;
+    background: $gold;
+    left: -130px;
+    transform: translate(0, 5px);
+    position: absolute;
+  }
 }
 
 .btn {
   background-color: $gold;
+  position: absolute;
+  top: 10em;
   padding: 1.5vw 3.5vw;
   border: none;
   font-size: $deskfont;
@@ -132,6 +182,9 @@ a {
   cursor: pointer;
   color: $bgcolor;
   z-index: 2;
+  @media screen and (max-width: 500px) {
+    top: 8em;
+  }
 }
 .btn:hover {
   background-color: goldenrod;
@@ -140,30 +193,70 @@ a {
 //Intro
 
 .introSection {
-  margin: 0 auto;
-  text-align: center;
   background-color: white;
   color: $bgcolor;
-  p {
+  .introText {
     max-width: 70%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 3fr 0.5fr 5.5fr;
+    @media screen and (max-width: 1000px) {
+      display: flex;
+      flex-direction: column;
+      max-width: 85%;
+      h3 {
+        font-size: $deskfont * 1.2;
+        margin-right: 0;
+      }
+    }
+  }
+  p {
     margin: 0px auto;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     font-weight: 200;
+    font-size: $deskfont / 1.2;
+  }
+
+  h3 {
+    font-size: $deskfont * 2.3;
+    margin-right: 50px;
+  }
+  h5 {
+    color: $bgcolor;
+    margin-top: $basemargin * 2;
+    text-align: left;
     font-size: $deskfont;
+    margin-bottom: $basemargin * 5;
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+
+  h5:before {
+    content: "";
+    display: block;
+    width: 6vw;
+    height: 2px;
+    background: $gold;
+    left: -130px;
+    transform: translate(0, 10px);
+    position: relative;
   }
 }
 
 //Profession
 .profession {
-  overflow-x: hidden;
+  background-color: $bgcolor;
+  color: $textcolor;
+  padding-top: 20px;
   h3 {
     color: $textcolor;
+    display: inline-block;
     position: relative;
     left: 15vw;
     margin-top: $basemargin * 2;
     font-size: $deskfont * 2;
-    margin-bottom: $basemargin * 5;
   }
   h3:before {
     content: "";
@@ -182,7 +275,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-evenly;
   max-width: 70%;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   h4 {
     font-size: $deskfont;
   }
@@ -252,12 +345,11 @@ a {
 .prices {
   background-color: $white;
   h3 {
-    color: $textcolor;
+    display: inline-block;
     position: relative;
     left: 15vw;
     margin-top: $basemargin * 2;
     font-size: $deskfont * 2;
-    margin-bottom: $basemargin * 5;
     color: $bgcolor;
   }
   h3:before {
@@ -304,6 +396,29 @@ a {
 
 //Contact
 
+.contact {
+  background-color: $gold;
+  color: $bgcolor;
+  padding: 20px 0;
+  h3 {
+    position: relative;
+    display: inline-block;
+    left: 15vw;
+    margin-top: $basemargin * 2;
+    font-size: $deskfont * 2;
+    margin-bottom: $basemargin * 5;
+  }
+  h3:before {
+    content: "";
+    display: block;
+    width: 6vw;
+    height: 2px;
+    background: $bgcolor;
+    left: -130px;
+    top: 50%;
+    position: absolute;
+  }
+}
 .contactText {
   display: flex;
   flex-direction: column;
@@ -312,7 +427,7 @@ a {
   max-width: 70vw;
   margin: 0 auto 15px;
   font-size: $deskfont;
-  color: $textcolor;
+  color: $bgcolor;
   @media screen and (max-width: 800px) {
     flex-direction: column;
     align-items: center;
@@ -327,16 +442,14 @@ a {
   input[type="text"],
   input[type="email"] {
     margin: 10px 0;
-    font-size: $deskfont * 1.5;
+    font-size: $deskfont * 1.3;
   }
-  border: 2px solid $gold;
-  padding: 50px;
   font-size: $deskfont;
   input:nth-child(9) {
     margin: 15px auto;
   }
   textarea {
-    font-size: $deskfont * 1.6;
+    font-size: $deskfont * 2;
   }
   .col-75 {
     float: left;
@@ -348,11 +461,13 @@ a {
     flex-direction: column;
     div {
       display: flex;
+      align-items: center;
       margin-top: 30px;
     }
   }
   p {
     max-width: fit-content;
+    font-size: $deskfont / 1.2;
     margin-left: 10px;
     span {
       cursor: pointer;
@@ -371,9 +486,11 @@ a {
 
 .footerDiv {
   display: flex;
+  position: relative;
+  top: -20px;
+  bottom: -20px;
   justify-content: space-evenly;
-  margin-bottom: 100px;
-  background-color: #090b0c;
+  background-color: $bgcolor;
   h3 {
     font-size: $deskfont * 2;
   }
@@ -382,7 +499,6 @@ a {
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: left;
-    margin-left: 70px;
     .footerDisclaimer {
       max-width: 90%;
       margin: 30px auto;
@@ -396,6 +512,7 @@ a {
 
 .footerDisclaimer {
   display: flex;
+  color: $textcolor;
   flex-direction: column;
   justify-content: space-around;
   max-width: 20%;
@@ -407,7 +524,8 @@ a {
 }
 
 .footerFlex {
-  margin: 15px 0;
+  color: $textcolor;
+  margin: 15px 20px;
   h3 {
     font-size: $deskfont;
   }
@@ -444,7 +562,8 @@ a {
   }
 
   .profession h3,
-  .prices h3 {
+  .prices h3,
+  .contact h3 {
     position: static;
     margin: 20px;
     font-size: $deskfont * 1.2;
@@ -460,8 +579,9 @@ a {
 
   .herotitle {
     position: absolute;
+    width: 60%;
     top: 100px;
-    left: 0;
+    left: -5vw;
     margin-left: 50px;
     h3 {
       margin-bottom: $basemargin * 3;
@@ -483,9 +603,4 @@ a {
   .contactForm > label {
     font-size: $mobfont * 1.2;
   }
-}
-
-.footerDiv {
-  margin-top: 100px;
-  margin-left: 50px;
 }
