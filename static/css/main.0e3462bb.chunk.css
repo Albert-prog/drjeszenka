@@ -26,10 +26,13 @@ a {
 .topnavsection {
   padding: 10px 80px 0;
   width: 99vw;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   background-color: #090b0c;
   color: #d9dada;
+  z-index: 50;
+  transition: 0.6s ease-in;
 }
 .topnavsection .topnavdiv {
   padding: 10px;
@@ -49,6 +52,9 @@ a {
     padding: 10px 40px 0;
   }
 }
+.topnavdeactivate {
+  display: flex;
+}
 .verticalspacer {
   width: 2px;
   background-color: #e9c576;
@@ -58,7 +64,7 @@ a {
   display: flex;
   justify-content: flex-end;
   position: fixed;
-  top: 50px;
+  top: 60px;
   right: 30px;
   margin: 0 80px;
   background-color: transparent;
@@ -93,7 +99,7 @@ a {
 }
 .heroDiv img {
   position: relative;
-  top: 0;
+  top: 80px;
   right: 0;
   width: 75%;
   float: right;
@@ -108,24 +114,24 @@ a {
     right: -80px;
   }
 }
-@media screen and (min-width: 371px) and (max-width: 800px) {
+@media screen and (min-width: 370px) and (max-width: 800px) {
   .heroDiv img {
     width: 70%;
-    top: 70px;
+    top: 90px;
     right: -60px;
   }
 }
 @media screen and (max-width: 500px) {
   .heroDiv {
-    height: 30vh;
+    height: 33vh;
   }
 }
 .logoImg {
   position: absolute;
-  max-width: 250px;
-  top: 5vw;
-  left: 6vw;
-  z-index: 3;
+  max-width: 220px;
+  top: 0;
+  left: -50vw;
+  z-index: 200;
 }
 .herotitle {
   color: #d9dada;
@@ -218,10 +224,10 @@ a {
     margin-right: 0;
   }
 }
-.introSection p {
+.introSection .introText p {
   margin: 0 auto;
   padding: 20px;
-  text-align: left;
+  text-align: justify;
   font-weight: 200;
   font-size: 18.33333px;
 }
@@ -289,7 +295,7 @@ a {
   position: relative;
   flex: 1 0 33%;
   width: 25%;
-  border-top: 2px solid #d9dada;
+  border-top: 2px solid #e9c576;
   padding: 5px;
   margin: 30px;
   cursor: pointer;
@@ -377,14 +383,14 @@ a {
 }
 .email {
   display: inline-block;
-  background-color: #e9c576;
+  background-color: #181026;
   padding: 15px 20px;
   margin: 25px auto;
   border: none;
   font-size: 22px;
   text-decoration: none;
   cursor: pointer;
-  color: #181026;
+  color: #d9dada;
   z-index: 2;
 }
 .email:hover {
@@ -486,6 +492,7 @@ a {
   bottom: -20px;
   justify-content: space-evenly;
   background-color: #181026;
+  padding-top: 40px;
 }
 .footerDiv h3 {
   font-size: 44px;
@@ -578,6 +585,7 @@ a {
   }
   .logoImg {
     max-width: 100px;
+    top: -10vw;
   }
   .contactForm > label,
   .contactForm input[type="email"],
@@ -586,4 +594,4 @@ a {
     font-size: 21.6px;
   }
 }
-/*# sourceMappingURL=main.bc7a2078.chunk.css.map */
+/*# sourceMappingURL=main.0e3462bb.chunk.css.map */
