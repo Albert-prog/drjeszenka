@@ -7,7 +7,7 @@ import { useTheme } from '@material-ui/core/styles';
 export default function Navbar() {
   const [showNav, setShowNav] = useState(true);
   const controlNavbar = () => {
-    if (window.scrollY>300) {
+    if (window.scrollY>150) {
       setShowNav(false)}
       else{
         setShowNav(true)
@@ -25,7 +25,7 @@ export default function Navbar() {
   const isMatch = useMediaQuery(theme.breakpoints.down('1020'));
 
   return (
-    <>
+    <div>
       <div className={showNav ? 'navbar' : 'navbarDeactive'}>
     { !isMatch ? 
       <>
@@ -38,11 +38,11 @@ export default function Navbar() {
         <a href="#contact"><h4>KAPCSOLAT</h4></a>
       </> : null 
 }
-    </div>
     <a href="/">
       <img src={logo} alt="jeszenkalogo" className="logoImg"/>
     </a>
-    </>
+    </div>
+    </div>
   )
 }
 

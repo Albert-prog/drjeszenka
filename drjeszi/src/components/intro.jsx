@@ -6,7 +6,7 @@ export const Intro = () => {
       <div className="introText">
         <div>
           <h5>Forduljon hozzám bizalommal!</h5> 
-          <h3>AZ ÜGYVÉD A SIKERBEN ÉS A GYŐZELEMBEN ÉRDEKELT!</h3>
+          <h3>AZ ÜGYVÉD IS A SIKERBEN ÉRDEKELT!</h3>
         </div>
         <div className="verticalspacer">
         </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -23,6 +23,22 @@ const useStyles = makeStyles({
 
 
 export default function Topnav() {
+
+  const [showTopNav, setShowTopNav] = useState(true);
+  const controlTopNavbar = () => {
+    if (window.scrollY>150) {
+      setShowTopNav(false)}
+      else{
+        setShowTopNav(true)
+      }
+    }
+
+  useEffect(()=> {
+    window.addEventListener('scroll',controlTopNavbar)
+    return() => {
+      window.removeEventListener('scroll',controlTopNavbar)
+    }
+  },[])
 
   
 
@@ -56,7 +72,7 @@ export default function Topnav() {
 
   return (
     <>
-      <div className="topnavsection">
+      <div className={showTopNav ? 'topnavsection' : 'topnavdeactivate'}>
     {
       !isMatch ? <>
       <div className="topnavdiv">
@@ -77,8 +93,8 @@ export default function Topnav() {
     {!isMatch ? 
       <div className="topnavicons">
         <a href="https://www.facebook.com" target='_blank' rel="noreferrer"><FacebookIcon/></a>
-        <a href="https://www.linkedin.com" target='_blank' rel="noreferrer"><LinkedInIcon/></a>
-        <a href="https://www.instagram.com" target='_blank' rel="noreferrer"><InstagramIcon/></a>
+        <a href="https://www.linkedin.com/in/adam-jeszenka-2956a0b8/" target='_blank' rel="noreferrer"><LinkedInIcon/></a>
+        <a href="https://www.instagram.com/drjeszenka/" target='_blank' rel="noreferrer"><InstagramIcon/></a>
       </div> : <>
     <Drawer classes={{paper: classes.drawerPaper, root: classes.drawerRoot}} onClose={()=>setOpenDrawer(false)} anchor='left' open={openDrawer}>
       <List>
