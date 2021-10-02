@@ -1,9 +1,12 @@
 import React from 'react';
 import logo from '../img/logo.png';
 import professions from '../lists/professions';
+import rolandLogo from '../img/roland.png';
+import albertLogo from '../img/albert-prog.PNG';
 
 function Footer() {
   return (
+    <>
     <div className="footerDiv">
       <div className="footerDisclaimer">
         <img src={logo} alt="" className="logoImg2"/>
@@ -29,6 +32,13 @@ function Footer() {
         </ul>
       </div>
     </div>
+    <div className="bottom">
+          <h5>dr. Jeszenka Ádám ügyvéd © Minden jog fenntartva</h5>
+          <p>Fotó:<a href="https://nyarirolandphoto.com/" target="_blank" rel="noreferrer"><img src={rolandLogo} alt="RolandLogo"></img></a></p>
+          <p>Dizájn:</p>
+          <p>Kód:<a href="https://nyarirolandphoto.com/" target="_blank" rel="noreferrer"><img src={albertLogo} alt="AlbertLogo"></img></a></p>
+    </div>
+    </>
   )
 }
 

@@ -58,19 +58,19 @@ function Contact() {
           <form className="contactForm" onSubmit={sendEmail}>
             <label>Név</label>
             <div className="col-75">
-              <input type="text" name="from_name" />  
+              <input placeholder="Minta János" type="text" name="from_name" />  
             </div>
             <label>Tárgy</label>
             <div className="col-75">
-              <input type="text" name="subject" />
+              <input placeholder="Bérleti szerződés" type="text" name="subject" />
             </div>
             <label>Email cím</label>
             <div className="col-75">
-              <input type="email" name="user_email" />
+              <input placeholder="minta@janos.hu" type="email" name="user_email" />
             </div>
             <label>Üzenet</label>
             <div className="col-75">
-              <textarea name="message" style={{height:"150px"}} />
+              <textarea placeholder="Az ügyben érdeklődnék Önnél, hogy....." name="message" style={{height:"150px", minWidth: "280px", maxWidth:"800px"}} />
             </div>
             <button name="submit" type="submit" value="Küldés" className="email" disabled={(checkedData||checkedConsent)}>Küldés</button>
             <div className="formConsent">
@@ -116,7 +116,7 @@ function Contact() {
             </DialogContentText>
             </DialogContent>
             <DialogActions>
-              <Button onClick={handleClose} color="primary">
+              <Button onClick={handleClose} style={{backgroundColor: "#e9c576", color: '#181026'}}>
                 Rendben
               </Button>
             </DialogActions>

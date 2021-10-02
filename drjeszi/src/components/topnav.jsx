@@ -8,6 +8,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { Button } from '@material-ui/core';
 import { Drawer, List, ListItem, ListItemText, ListItemIcon} from '@material-ui/core';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
+import logo from '../img/logo.png';
 
 
 
@@ -64,6 +65,7 @@ export default function Topnav() {
     },
   });
 
+ 
   const theme = useTheme();
   const [openDrawer, setOpenDrawer] = useState(false);
 
@@ -72,13 +74,18 @@ export default function Topnav() {
 
   return (
     <>
+      <div>
+        <a href="/">
+          <img src={logo} alt="jeszenkalogo" className="logoImg"/>
+        </a>
+      </div>
       <div className={showTopNav ? 'topnavsection' : 'topnavdeactivate'}>
     {
       !isMatch ? <>
       <div className="topnavdiv">
-        <h3>1133 Budapest, Váci út 78/A 1.emelet 3.ajtó</h3>
+        <h3>1133 Budapest, Váci út 78/A 1.emelet 3. ajtó</h3>
         <div className="verticalspacer"></div>
-        <h3>ugyved.jeszenka@gmail.com</h3>
+        <a href="mailto:ugyved.jeszenka@gmail.com"><h3>ugyved.jeszenka@gmail.com</h3></a>
         <div className="verticalspacer"></div>
         <h3>+36 70 395 8422</h3>
       </div>
@@ -92,12 +99,12 @@ export default function Topnav() {
 
     {!isMatch ? 
       <div className="topnavicons">
-        <a href="https://www.facebook.com" target='_blank' rel="noreferrer"><FacebookIcon/></a>
-        <a href="https://www.linkedin.com/in/adam-jeszenka-2956a0b8/" target='_blank' rel="noreferrer"><LinkedInIcon/></a>
-        <a href="https://www.instagram.com/drjeszenka/" target='_blank' rel="noreferrer"><InstagramIcon/></a>
+        <a href="https://www.facebook.com/drjeszenka/" target='_blank' rel="noreferrer"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/adam-jeszenka-2956a0b8/" target='_blank' rel="noreferrer"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/drjeszenka/" target='_blank' rel="noreferrer"><i class="fa fa-instagram"></i></a>
       </div> : <>
     <Drawer classes={{paper: classes.drawerPaper, root: classes.drawerRoot}} onClose={()=>setOpenDrawer(false)} anchor='left' open={openDrawer}>
-      <List>
+      <List style={{backgroundColor:'#181026', color:'#e9c576'}}>
         <ListItem button>
           <ListItemIcon>
             <ListItemText onClick={()=>setOpenDrawer(!openDrawer)}><a href="#about">Rólam</a></ListItemText>
@@ -125,7 +132,7 @@ export default function Topnav() {
             <a href="https://www.instagram.com" target='_blank' rel="noreferrer"><InstagramIcon/></a>
           </div>
         </ListItem>
-        <ListItem button>
+        <ListItem>
         <div className="topnavdiv">
           <ListItemText>Váci út 78/A 1.emelet 3.ajtó</ListItemText>
           <ListItemText>1133 Budapest</ListItemText>
