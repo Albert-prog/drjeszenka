@@ -36,7 +36,7 @@ function Footer() {
           <h5>dr. Jeszenka Ádám ügyvéd © Minden jog fenntartva</h5>
           <p>Fotó:<a href="https://nyarirolandphoto.com/" target="_blank" rel="noreferrer"><img src={rolandLogo} alt="RolandLogo"></img></a></p>
           <p>Dizájn:</p>
-          <p>Kód:<a href="https://nyarirolandphoto.com/" target="_blank" rel="noreferrer"><img src={albertLogo} alt="AlbertLogo"></img></a></p>
+          <p>Kód:<a href="https://github.com/Albert-prog" target="_blank" rel="noreferrer"><img src={albertLogo} alt="AlbertLogo"></img></a></p>
     </div>
     </>
   )
