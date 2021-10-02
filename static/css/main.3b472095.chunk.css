@@ -22,6 +22,7 @@ code {
 }
 a {
   text-decoration: none;
+  color: #d9dada;
 }
 .topnavsection {
   padding: 10px 80px 0;
@@ -29,7 +30,7 @@ a {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  background-color: #090b0c;
+  background-color: transparent;
   color: #d9dada;
   z-index: 50;
   transition: 0.6s ease-in;
@@ -60,11 +61,18 @@ a {
   background-color: #e9c576;
   margin: 0 10px;
 }
+.fa {
+  font-size: 24px;
+  padding: 0 5px;
+}
+.fa:hover {
+  color: #e9c576;
+}
 .navbar {
   display: flex;
   justify-content: flex-end;
   position: fixed;
-  top: 60px;
+  top: 70px;
   right: 30px;
   margin: 0 80px;
   background-color: transparent;
@@ -80,7 +88,10 @@ a {
   color: #d9dada;
   text-decoration: none;
 }
-.navbar a:hover {
+.navbar .navbarText {
+  display: flex;
+}
+.navbar .navbarText a:hover {
   background-color: #e9c576;
   color: #181026;
 }
@@ -88,68 +99,108 @@ a {
   display: flex;
 }
 .heroDiv {
-  width: 99vw;
+  display: inline-block;
+  position: relative;
+  top: -80px;
   background-color: #090b0c;
 }
 .heroDiv,
 .heroDiv img {
-  display: block;
   height: auto;
   overflow: hidden;
 }
 .heroDiv img {
-  position: relative;
-  top: 80px;
   right: 0;
-  width: 75%;
+  width: 70%;
   float: right;
   opacity: 50%;
   z-index: 1;
 }
-@media screen and (max-width: 370px) {
-  .heroDiv img {
-    display: none;
-    width: 70%;
-    top: 80px;
-    right: -80px;
-  }
-}
 @media screen and (min-width: 370px) and (max-width: 800px) {
   .heroDiv img {
-    width: 70%;
     top: 90px;
     right: -60px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .heroDiv {
-    height: 33vh;
   }
 }
 .logoImg {
   position: absolute;
   max-width: 220px;
-  top: 0;
-  left: -50vw;
+  top: 70px;
+  left: 15vw;
   z-index: 200;
 }
 .herotitle {
   color: #d9dada;
-  position: absolute;
+  position: relative;
   width: 80%;
-  top: 20em;
+  top: 28vw;
   left: 15vw;
   margin-right: auto;
   z-index: 5;
 }
-@media screen and (max-width: 500px) {
-  .herotitle {
-    width: 60%;
-  }
-}
 .herotitle h3 {
   font-size: 2.2vw;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 399px) {
+  .herotitle {
+    top: 37vw;
+    width: 40%;
+    left: 8vw;
+  }
+  .herotitle h3 {
+    padding-top: 50px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .herotitle .btn {
+    position: static;
+    font-size: 12px;
+    padding: 12px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 499px) {
+  .herotitle {
+    top: 37vw;
+    width: 40%;
+    left: 8vw;
+  }
+  .herotitle h3 {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .herotitle .btn {
+    position: static;
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  .herotitle {
+    width: 40%;
+    left: 8vw;
+    top: 33vw;
+  }
+  .herotitle h4 {
+    display: none;
+  }
+  .herotitle h3 {
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+  .herotitle .btn {
+    position: static;
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .herotitle {
+    left: 8vw;
+  }
+  .herotitle h4 {
+    display: none;
+  }
 }
 .herotitle p:before {
   content: "";
@@ -184,7 +235,6 @@ a {
 .btn {
   background-color: #e9c576;
   position: absolute;
-  top: 10em;
   padding: 1.5vw 3.5vw;
   border: none;
   font-size: 22px;
@@ -207,7 +257,7 @@ a {
 }
 .introSection .introText {
   max-width: 70%;
-  margin: 50px auto;
+  margin: 0 auto 70px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 3fr 0.5fr 5.5fr;
@@ -226,7 +276,7 @@ a {
 }
 .introSection .introText p {
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0;
   text-align: justify;
   font-weight: 200;
   font-size: 18.33333px;
@@ -448,17 +498,22 @@ a {
 .contactForm input[type="email"],
 .contactForm input[type="text"] {
   margin: 10px 0;
-  font-size: 28.6px;
+  font-size: 22px;
+  padding: 5px;
 }
 .contactForm input:nth-child(9) {
   margin: 15px auto;
 }
 .contactForm textarea {
-  font-size: 44px;
+  font-size: 22px;
+  padding: 5px;
 }
 .contactForm .col-75 {
   float: left;
   margin-top: 6px;
+}
+.contactForm textarea {
+  border: 2px solid #181026;
 }
 .contactForm .formConsent {
   display: flex;
@@ -487,7 +542,6 @@ a {
 }
 .footerDiv {
   display: flex;
-  position: relative;
   top: -20px;
   bottom: -20px;
   justify-content: space-evenly;
@@ -497,7 +551,7 @@ a {
 .footerDiv h3 {
   font-size: 44px;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 800px) {
   .footerDiv {
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -524,6 +578,9 @@ a {
   display: inline-block;
   text-align: justify;
 }
+.footerDisclaimer a {
+  color: #e9c576;
+}
 .footerFlex {
   color: #d9dada;
   margin: 15px 20px;
@@ -547,7 +604,23 @@ a {
 .footerList li:hover {
   color: #e9c576;
 }
-@media screen and (max-width: 800px) {
+.bottom {
+  background-color: #181026;
+  text-align: center;
+  color: #d9dada;
+  padding-top: 10px;
+}
+.bottom p {
+  padding: 5px 0;
+  font-size: 11px;
+}
+.bottom img {
+  max-width: 100px;
+  padding-left: 5px;
+  vertical-align: middle;
+}
+@media screen and (max-width: 1000px) {
+  .introText,
   .pricesText {
     max-width: 85%;
   }
@@ -561,31 +634,17 @@ a {
     margin: 20px;
     font-size: 26.4px;
   }
-  .heroDiv,
   .profession {
     position: static;
   }
   .heroDiv {
+    position: relative;
     width: 100vw;
-  }
-  .herotitle {
-    position: absolute;
-    width: 60%;
-    top: 100px;
-    left: -5vw;
-    margin-left: 50px;
-  }
-  .herotitle h3 {
-    margin-bottom: 30px;
-    font-size: 16px;
-  }
-  .herotitle .btn {
-    font-size: 14px;
-    padding: 12px;
   }
   .logoImg {
     max-width: 100px;
-    top: -10vw;
+    top: 10px;
+    left: 8vw;
   }
   .contactForm > label,
   .contactForm input[type="email"],
@@ -594,4 +653,4 @@ a {
     font-size: 21.6px;
   }
 }
-/*# sourceMappingURL=main.0e3462bb.chunk.css.map */
+/*# sourceMappingURL=main.3b472095.chunk.css.map */
