@@ -74,29 +74,33 @@ export default function Topnav() {
 
   return (
     <>
-      <div>
-        <a href="/">
-          <img src={logo} alt="jeszenkalogo" className="logoImg"/>
-        </a>
-      </div>
-      <div className={showTopNav ? 'topnavsection' : 'topnavdeactivate'}>
+      
+      <div className={showTopNav && 'topnavsection'}>
+        
     {
-      !isMatch ? <>
-      <div className="topnavdiv">
-        <h3>1133 Budapest, Váci út 78/A 1.emelet 3. ajtó</h3>
-        <div className="verticalspacer"></div>
-        <a href="mailto:ugyved.jeszenka@gmail.com"><h3>ugyved.jeszenka@gmail.com</h3></a>
-        <div className="verticalspacer"></div>
-        <h3>+36 70 395 8422</h3>
-      </div>
+      !isMatch ? 
+      <>
+        <div className="topnavdiv">
+          <h3>1133 Budapest, Váci út 78/A 1.emelet 3. ajtó</h3>
+          <div className="verticalspacer"></div>
+          <a href="mailto:ugyved.jeszenka@gmail.com"><h3>ugyved.jeszenka@gmail.com</h3></a>
+          <div className="verticalspacer"></div>
+          <h3>+36 70 395 8422</h3>
+        </div>
       </> : 
       <ThemeProvider theme={themeBtn}>
         <Button>
           <MenuIcon onClick={()=>setOpenDrawer(!openDrawer)}/>
         </Button>
     </ThemeProvider>
+    
     }
-
+    
+    <div>
+        <a href="/">
+          <img src={logo} alt="jeszenkalogo" className="logoImg"/>
+        </a>
+      </div>
     {!isMatch ? 
       <div className="topnavicons">
         <a href="https://www.facebook.com/drjeszenka/" target='_blank' rel="noreferrer"><i class="fa fa-facebook"></i></a>

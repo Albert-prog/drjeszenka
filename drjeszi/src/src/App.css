@@ -17,7 +17,8 @@ a {
 
 .topnavsection {
   padding: 10px 80px 0;
-  width: 99vw;
+  width: 100%;
+  height: 45px;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,10 +27,17 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: transparent;
+  top: 0;
   color: #d9dada;
   z-index: 50;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
   -webkit-transition: 0.6s ease-in;
-  transition: 0.6s ease-in;
+  -moz-transition: 0.6s ease-in;
+  -o-transition: 0.6s ease-in;
+  -ms-transition: 0.6s ease-in;
 }
 
 .topnavsection .topnavdiv {
@@ -58,16 +66,11 @@ a {
   }
 }
 
-.topnavdeactivate {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .verticalspacer {
   width: 2px;
   background-color: #e9c576;
   margin: 0 10px;
+  height: 30px;
 }
 
 .fa {
@@ -83,10 +86,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: fixed;
+  height: 40px;
   top: 70px;
   right: 30px;
   margin: 0 80px;
@@ -107,21 +115,13 @@ a {
   text-decoration: none;
 }
 
-.navbar .navbarText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.navbar .navbarText a:hover {
+.navbar a:hover {
   background-color: #e9c576;
   color: #181026;
 }
 
 .navbarDeactive {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 0;
 }
 
 .heroDiv {
@@ -523,28 +523,6 @@ a {
   margin: 50px 0;
 }
 
-.email {
-  display: inline-block;
-  background-color: #181026;
-  padding: 15px 20px;
-  margin: 25px auto;
-  border: none;
-  font-size: 22px;
-  text-decoration: none;
-  cursor: pointer;
-  color: #d9dada;
-  z-index: 2;
-}
-
-.email:hover {
-  background-color: goldenrod;
-}
-
-.email:disabled {
-  background-color: #cccccc;
-  color: #666666;
-}
-
 .contact {
   background-color: #e9c576;
   color: #181026;
@@ -569,6 +547,13 @@ a {
   left: -130px;
   top: 50%;
   position: absolute;
+}
+
+.formContainer {
+  background-color: #181026;
+  padding: 10px 1em;
+  color: #e9c576;
+  margin-top: 20px;
 }
 
 .contactText {
@@ -636,10 +621,6 @@ a {
   margin-top: 6px;
 }
 
-.contactForm textarea {
-  border: 2px solid #181026;
-}
-
 .contactForm .formConsent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -671,6 +652,28 @@ a {
 .contactForm p span {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.email {
+  display: inline-block;
+  background-color: #e9c576;
+  padding: 15px 20px;
+  margin: 25px auto;
+  border: none;
+  font-size: 22px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #181026;
+  z-index: 2;
+}
+
+.email:hover {
+  background-color: goldenrod;
+}
+
+.email:disabled {
+  background-color: #cccccc;
+  color: #666666;
 }
 
 .logoImg2 {

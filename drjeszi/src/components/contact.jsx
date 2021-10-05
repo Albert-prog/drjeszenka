@@ -77,9 +77,9 @@ function Contact() {
               <div>
                 <Checkbox defaultChecked={!checkedData} onChange={()=>setCheckedData(!checkedData)}
                 sx={{
-                  color: '#181026;',
+                  color: '#e9c576;',
                   '&.Mui-checked': {
-                    color: '#181026;',
+                    color: '#e9c576;',
                   },
                 }} 
                 />
@@ -88,9 +88,9 @@ function Contact() {
               <div>
               <Checkbox defaultChecked={!checkedConsent} onChange={()=>setCheckedConsent(!checkedConsent)}
                 sx={{
-                  color: '#181026;',
+                  color: '#e9c576;',
                   '&.Mui-checked': {
-                    color: '#181026;',
+                    color: '#e9c576;',
                   },
                 }} 
                 />
