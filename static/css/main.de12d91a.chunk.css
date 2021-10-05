@@ -26,14 +26,21 @@ a {
 }
 .topnavsection {
   padding: 10px 80px 0;
-  width: 99vw;
+  width: 100%;
+  height: 45px;
   position: fixed;
   display: flex;
   justify-content: space-between;
   background-color: transparent;
+  top: 0;
   color: #d9dada;
   z-index: 50;
-  transition: 0.6s ease-in;
+  transition-timing-function: ease-in;
+  transition: 0.6s;
+  -webkit-transition: 0.6s ease-in;
+  -moz-transition: 0.6s ease-in;
+  -o-transition: 0.6s ease-in;
+  -ms-transition: 0.6s ease-in;
 }
 .topnavsection .topnavdiv {
   padding: 10px;
@@ -53,13 +60,11 @@ a {
     padding: 10px 40px 0;
   }
 }
-.topnavdeactivate {
-  display: flex;
-}
 .verticalspacer {
   width: 2px;
   background-color: #e9c576;
   margin: 0 10px;
+  height: 30px;
 }
 .fa {
   font-size: 24px;
@@ -70,8 +75,10 @@ a {
 }
 .navbar {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   position: fixed;
+  height: 40px;
   top: 70px;
   right: 30px;
   margin: 0 80px;
@@ -88,15 +95,12 @@ a {
   color: #d9dada;
   text-decoration: none;
 }
-.navbar .navbarText {
-  display: flex;
-}
-.navbar .navbarText a:hover {
+.navbar a:hover {
   background-color: #e9c576;
   color: #181026;
 }
 .navbarDeactive {
-  display: flex;
+  height: 0;
 }
 .heroDiv {
   display: inline-block;
@@ -431,25 +435,6 @@ a {
 .pricesText p {
   margin: 50px 0;
 }
-.email {
-  display: inline-block;
-  background-color: #181026;
-  padding: 15px 20px;
-  margin: 25px auto;
-  border: none;
-  font-size: 22px;
-  text-decoration: none;
-  cursor: pointer;
-  color: #d9dada;
-  z-index: 2;
-}
-.email:hover {
-  background-color: #daa520;
-}
-.email:disabled {
-  background-color: #ccc;
-  color: #666;
-}
 .contact {
   background-color: #e9c576;
   color: #181026;
@@ -472,6 +457,12 @@ a {
   left: -130px;
   top: 50%;
   position: absolute;
+}
+.formContainer {
+  background-color: #181026;
+  padding: 10px 1em;
+  color: #e9c576;
+  margin-top: 20px;
 }
 .contactText {
   display: flex;
@@ -512,9 +503,6 @@ a {
   float: left;
   margin-top: 6px;
 }
-.contactForm textarea {
-  border: 2px solid #181026;
-}
 .contactForm .formConsent {
   display: flex;
   flex-direction: column;
@@ -534,6 +522,25 @@ a {
 .contactForm p span {
   cursor: pointer;
   text-decoration: underline;
+}
+.email {
+  display: inline-block;
+  background-color: #e9c576;
+  padding: 15px 20px;
+  margin: 25px auto;
+  border: none;
+  font-size: 22px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #181026;
+  z-index: 2;
+}
+.email:hover {
+  background-color: #daa520;
+}
+.email:disabled {
+  background-color: #ccc;
+  color: #666;
 }
 .logoImg2 {
   max-width: 70%;
@@ -653,4 +660,4 @@ a {
     font-size: 21.6px;
   }
 }
-/*# sourceMappingURL=main.3b472095.chunk.css.map */
+/*# sourceMappingURL=main.de12d91a.chunk.css.map */
