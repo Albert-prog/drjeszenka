@@ -61,10 +61,16 @@ a {
   }
 }
 .verticalspacer {
+  height: 30px;
+}
+.verticalspacer,
+.verticalspacerLong {
   width: 2px;
   background-color: #e9c576;
   margin: 0 10px;
-  height: 30px;
+}
+.verticalspacerLong {
+  height: auto;
 }
 .fa {
   font-size: 24px;
@@ -660,4 +666,4 @@ a {
     font-size: 21.6px;
   }
 }
-/*# sourceMappingURL=main.de12d91a.chunk.css.map */
+/*# sourceMappingURL=main.253f386a.chunk.css.map */
