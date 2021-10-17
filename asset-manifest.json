@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.253f386a.chunk.css",
-    "main.js": "/static/js/main.05ccc620.chunk.js",
-    "main.js.map": "/static/js/main.05ccc620.chunk.js.map",
+    "main.css": "/static/css/main.3e93147e.chunk.css",
+    "main.js": "/static/js/main.74e53bc5.chunk.js",
+    "main.js.map": "/static/js/main.74e53bc5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f2505e23.js",
     "runtime-main.js.map": "/static/js/runtime-main.f2505e23.js.map",
     "static/js/2.b396343f.chunk.js": "/static/js/2.b396343f.chunk.js",
@@ -10,17 +10,18 @@
     "static/js/3.38b5f2a7.chunk.js": "/static/js/3.38b5f2a7.chunk.js",
     "static/js/3.38b5f2a7.chunk.js.map": "/static/js/3.38b5f2a7.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.253f386a.chunk.css.map": "/static/css/main.253f386a.chunk.css.map",
+    "static/css/main.3e93147e.chunk.css.map": "/static/css/main.3e93147e.chunk.css.map",
     "static/js/2.b396343f.chunk.js.LICENSE.txt": "/static/js/2.b396343f.chunk.js.LICENSE.txt",
-    "static/media/Urak676.411a731e.webp": "/static/media/Urak676.411a731e.webp",
     "static/media/albert-prog.2062095a.PNG": "/static/media/albert-prog.2062095a.PNG",
+    "static/media/barneyb_logo_2021.a73d8b86.png": "/static/media/barneyb_logo_2021.a73d8b86.png",
+    "static/media/jeszi_kicsi.bcee5d11.png": "/static/media/jeszi_kicsi.bcee5d11.png",
     "static/media/logo.0ef6cd50.png": "/static/media/logo.0ef6cd50.png",
     "static/media/roland.9859ff68.png": "/static/media/roland.9859ff68.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f2505e23.js",
     "static/js/2.b396343f.chunk.js",
-    "static/css/main.253f386a.chunk.css",
-    "static/js/main.05ccc620.chunk.js"
+    "static/css/main.3e93147e.chunk.css",
+    "static/js/main.74e53bc5.chunk.js"
   ]
 }
