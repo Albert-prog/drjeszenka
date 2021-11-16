@@ -472,6 +472,7 @@ a {
   padding: 10px 1em;
   color: #e9c576;
   margin-top: 20px;
+  max-width: 350px;
 }
 .contactText {
   display: flex;
@@ -500,6 +501,7 @@ a {
   margin: 10px 0;
   font-size: 22px;
   padding: 5px;
+  min-width: 280px;
 }
 .contactForm input:nth-child(9) {
   margin: 15px auto;
@@ -669,4 +671,4 @@ a {
     font-size: 21.6px;
   }
 }
-/*# sourceMappingURL=main.42be4e5b.chunk.css.map */
+/*# sourceMappingURL=main.2f8d0585.chunk.css.map */
